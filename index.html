@@ -1202,7 +1202,7 @@ $(function(){
         <!-- 보자기 약도 -->
                 <div class="map_object" data-cat="yakdo" data-type="yakdo" style="position: relative; text-align: right;">
             <img src="./img/130401_01_06.png" class="map_img_zoom_btn" />
-            <img class="map_view_img" src="./bojagicard/image_sample/map/com20190404112735.gif?hash=1671378580" />
+            <img class="map_view_img" src="./weddingLetter/image_sample/map/com20190404112735.gif?hash=1671378580" />
             <br />
         </div>
         
@@ -1385,7 +1385,7 @@ $(function(){
         복잡한 입력 없이 간편하게<br />
         축하의 마음을 담아 전하실 수 있습니다.
     </div>
-    <a class="aff_banner" target="_blank" href="http://agent.maruw.co.kr/mobile/product?shop=bojagicard&idx=f18d940e387c5e82f45eb1c0a9176928">
+    <a class="aff_banner" target="_blank" href="http://agent.maruw.co.kr/mobile/product?shop=weddingLetter&idx=f18d940e387c5e82f45eb1c0a9176928">
     <div>
         축하 화환 간편 배송
     </div>
@@ -1693,20 +1693,20 @@ $(function() {
       objectType: 'feed',
       content: {
         title: '인찬호♡정단비의 결혼식에 초대합니다.',
-        imageUrl: 'http://bojagicard.com/scene/ek/eksql11223/merge.jpg?1671427491',
+        imageUrl: 'http://weddingLetter.com/scene/ek/eksql11223/merge.jpg?1671427491',
         imageWidth: 640,
         imageHeight: 852,
         link: {
-          mobileWebUrl: 'http://bojagicard.com/eksql11223',
-          webUrl: 'http://bojagicard.com/eksql11223'
+          mobileWebUrl: 'http://weddingLetter.com/eksql11223',
+          webUrl: 'http://weddingLetter.com/eksql11223'
         }
       },
       buttons: [
         {
           title: '모바일청첩장 바로가기',
           link: {
-            mobileWebUrl: 'http://bojagicard.com/eksql11223',
-            webUrl: 'http://bojagicard.com/eksql11223'
+            mobileWebUrl: 'http://weddingLetter.com/eksql11223',
+            webUrl: 'http://weddingLetter.com/eksql11223'
           }
     
         }
@@ -1720,7 +1720,7 @@ $(function() {
             mask(0)
         $('#kakaotalk_preview_img').attr('src', './m/img/loading6.gif')
         }, 500)
-        $.get('_sns_kakaotalk_sent.php?uid=eksql11223&logon_id=&image_url=http://bojagicard.com/scene/ek/eksql11223/merge.jpg?1671427491')
+        $.get('_sns_kakaotalk_sent.php?uid=eksql11223&logon_id=&image_url=http://weddingLetter.com/scene/ek/eksql11223/merge.jpg?1671427491')
     })
 
 
@@ -1742,7 +1742,7 @@ $(function() {
             }
             return false
         }
-        var url = '_sns_kakaostory_img.php?uid='+uid+'&post=인찬호♡정단비의 모바일청첩장입니다. http://bojagicard.com/eksql11223&appid=m.bojagicard.com&appver=1.0&apiver=1.0&appname=모바일청첩장&title=인찬호♡정단비의 모바일청첩장&desc=http://bojagicard.com/eksql11223&imageurl=http://bojagicard.com/scene/ek/eksql11223/merge.jpg'
+        var url = '_sns_kakaostory_img.php?uid='+uid+'&post=인찬호♡정단비의 모바일청첩장입니다. http://weddingLetter.com/eksql11223&appid=m.weddingLetter.com&appver=1.0&apiver=1.0&appname=모바일청첩장&title=인찬호♡정단비의 모바일청첩장&desc=http://weddingLetter.com/eksql11223&imageurl=http://weddingLetter.com/scene/ek/eksql11223/merge.jpg'
         location.href = url
     })
 
@@ -1765,7 +1765,7 @@ $(function() {
         }
             return false
         }
-        var url = '//m.facebook.com/sharer.php?u=http://bojagicard.com/i/home.php?uid='+uid
+        var url = '//m.facebook.com/sharer.php?u=http://weddingLetter.com/i/home.php?uid='+uid
         window.open(url, '', 'width=600,height=600')
     })
 
@@ -1775,7 +1775,7 @@ $(function() {
 /* function */
 function sns_share_line() {
     var shareInfo = '인찬호♡정단비의 결혼식에 초대합니다.\n'
-    shareInfo += 'http://bojagicard.com/' + uid
+    shareInfo += 'http://weddingLetter.com/' + uid
     var url = "http://line.me/R/msg/text/?" + encodeURIComponent(shareInfo)
     var a = window.open(url, 'Line', '')
     if (a) a.focus()
@@ -3362,7 +3362,7 @@ $(function(){
     }
 
     $('.photo_view_video').bind('click', function(){
-        window.open('https://mcard2.bojagicard.com/mcard/photo_view_zoom.php?fn='+$(this).data('src_original'));  // 2019.10.15 video only sep
+        window.open('https://mcard2.weddingLetter.com/mcard/photo_view_zoom.php?fn='+$(this).data('src_original'));  // 2019.10.15 video only sep
     })
 
 
@@ -3713,7 +3713,7 @@ $(function(){
     if (uid == 'onave') {  // 테스트용으로 사용하세요
         //console.log('cookie deleted')
         //$.cookie('mcard_guest_user_name', '테스트')
-        //$.cookie('mcard_guest_user_mail', 'noe@bojagicard.com')
+        //$.cookie('mcard_guest_user_mail', 'noe@weddingLetter.com')
         //$.cookie('mcard_guest_user_name', null)
         //$.cookie('mcard_guest_user_mail', null)
         //$.cookie('mcard_guest_user_name', null, {path: '/'})
