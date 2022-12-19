@@ -1,0 +1,4381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>인찬호♡정단비의 모바일청첩장입니다</title>
+
+
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="user-scalable=yes, initial-scale=1.0" />
+    <!--
+    , maximum-scale=3.0
+    -->
+<meta name="HandheldFriendly" content="true">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="./home.html" />
+<meta property="og:title" content="인찬호♡정단비의 모바일청첩장" />
+<meta property="og:image" content="./img/130219_01_00.png" />
+
+<link rel="stylesheet" type="text/css" href="style.css?hash=20221114" />
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css" type="text/css" />
+<link rel="stylesheet" href="./jquery/css/swiper.min.css">
+<script language="javascript" type="text/javascript" src="./jquery/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="./jquery/imagesloaded.pkgd.min.js"></script>
+<script language="javascript" type="text/javascript" src="./jquery/jquery.ui.1.8.18.all.min.js"></script>
+<script language="javascript" type="text/javascript" src="./jquery/jquery.form.js"></script>
+<script language="javascript" type="text/javascript" src="./jquery/jquery.cookie.js"></script>
+<script language="javascript" type="text/javascript" src="./jquery/jquery.transit.min.js"></script>
+<script language="javascript" type="text/javascript" src="./jquery/swipe.js"></script>
+<script language="javascript" type="text/javascript" src="./jquery/swiper.min.js"></script>
+<script>
+var mcni = '0';
+var mcni_func = '0';
+var mask_release_allow = true
+if (mcni_func == '2') mask_release_allow = false
+</script>
+
+<script>
+var https = 'on'
+var is_pc = ''
+var uid = 'eksql11223'
+
+// auto image size
+if (navigator.userAgent.indexOf("Mobile") != -1) var Mobile=1
+var nw=0
+var nh=0
+nw = Number(document.documentElement.clientWidth)  //BROWSER WIDTH
+nh = Number(document.documentElement.clientHeight)
+
+
+var screen_ratio = nw/320
+var whrate = nw/nh
+
+var photo_idx = 0
+
+$(function() {
+
+
+    
+
+        if (whrate < 1.5) {
+                $(".low_whrate_is").show()
+                $(".low_whrate_no").hide()
+        }
+
+
+        $(".fits").each(function() {
+
+                $(this).css("width",   Math.round(Number($(this).attr("width")*screen_ratio))  )
+                var h=Math.round(Number($(this).attr("height")*screen_ratio))
+                if ($(this).attr("height")) $(this).css("height",  h  )
+                $("#sesnor_block").css("height",  h  )
+                $("#sesnor_block").attr("height",  h  )
+                $("#slideshow").css("height",  h  )
+                if ( $(this).attr("src") == "./img/000000_00_00.png" ) $(this).css("height",1)
+
+        })
+
+        
+})
+
+var md5 = function(s) {function L(k,d) {return(k<<d)|(k>>>(32-d))}function K(G,k) {var I,d,F,H,x;F=(G&2147483648);H=(k&2147483648);I=(G&1073741824);d=(k&1073741824);x=(G&1073741823)+(k&1073741823);if (I&d) {return(x^2147483648^F^H)}if (I|d) {if (x&1073741824) {return(x^3221225472^F^H)}else{return(x^1073741824^F^H)}}else{return(x^F^H)}}function r(d,F,k) {return(d&F)|((~d)&k)}function q(d,F,k) {return(d&k)|(F&(~k))}function p(d,F,k) {return(d^F^k)}function n(d,F,k) {return(F^(d|(~k)))}function u(G,F,aa,Z,k,H,I) {G=K(G,K(K(r(F,aa,Z),k),I));return K(L(G,H),F)}function f(G,F,aa,Z,k,H,I) {G=K(G,K(K(q(F,aa,Z),k),I));return K(L(G,H),F)}function D(G,F,aa,Z,k,H,I) {G=K(G,K(K(p(F,aa,Z),k),I));return K(L(G,H),F)}function t(G,F,aa,Z,k,H,I) {G=K(G,K(K(n(F,aa,Z),k),I));return K(L(G,H),F)}function e(G) {var Z;var F=G.length;var x=F+8;var k=(x-(x%64))/64;var I=(k+1)*16;var aa=Array(I-1);var d=0;var H=0;while(H<F) {Z=(H-(H%4))/4;d=(H%4)*8;aa[Z]=(aa[Z]| (G.charCodeAt(H)<<d));H++}Z=(H-(H%4))/4;d=(H%4)*8;aa[Z]=aa[Z]|(128<<d);aa[I-2]=F<<3;aa[I-1]=F>>>29;return aa}function B(x) {var k="",F="",G,d;for(d=0;d<=3;d++) {G=(x>>>(d*8))&255;F="0"+G.toString(16);k=k+F.substr(F.length-2,2)}return k}function J(k) {k=k.replace(/rn/g,"n");var d="";for(var F=0;F<k.length;F++) {var x=k.charCodeAt(F);if (x<128) {d+=String.fromCharCode(x)}else{if ((x>127)&&(x<2048)) {d+=String.fromCharCode((x>>6)|192);d+=String.fromCharCode((x&63)|128)}else{d+=String.fromCharCode((x>>12)|224);d+=String.fromCharCode(((x>>6)&63)|128);d+=String.fromCharCode((x&63)|128)}}}return d}var C=Array();var P,h,E,v,g,Y,X,W,V;var S=7,Q=12,N=17,M=22;var A=5,z=9,y=14,w=20;var o=4,m=11,l=16,j=23;var U=6,T=10,R=15,O=21;s=J(s);C=e(s);Y=1732584193;X=4023233417;W=2562383102;V=271733878;for(P=0;P<C.length;P+=16) {h=Y;E=X;v=W;g=V;Y=u(Y,X,W,V,C[P+0],S,3614090360);V=u(V,Y,X,W,C[P+1],Q,3905402710);W=u(W,V,Y,X,C[P+2],N,606105819);X=u(X,W,V,Y,C[P+3],M,3250441966);Y=u(Y,X,W,V,C[P+4],S,4118548399);V=u(V,Y,X,W,C[P+5],Q,1200080426);W=u(W,V,Y,X,C[P+6],N,2821735955);X=u(X,W,V,Y,C[P+7],M,4249261313);Y=u(Y,X,W,V,C[P+8],S,1770035416);V=u(V,Y,X,W,C[P+9],Q,2336552879);W=u(W,V,Y,X,C[P+10],N,4294925233);X=u(X,W,V,Y,C[P+11],M,2304563134);Y=u(Y,X,W,V,C[P+12],S,1804603682);V=u(V,Y,X,W,C[P+13],Q,4254626195);W=u(W,V,Y,X,C[P+14],N,2792965006);X=u(X,W,V,Y,C[P+15],M,1236535329);Y=f(Y,X,W,V,C[P+1],A,4129170786);V=f(V,Y,X,W,C[P+6],z,3225465664);W=f(W,V,Y,X,C[P+11],y,643717713);X=f(X,W,V,Y,C[P+0],w,3921069994);Y=f(Y,X,W,V,C[P+5],A,3593408605);V=f(V,Y,X,W,C[P+10],z,38016083);W=f(W,V,Y,X,C[P+15],y,3634488961);X=f(X,W,V,Y,C[P+4],w,3889429448);Y=f(Y,X,W,V,C[P+9],A,568446438);V=f(V,Y,X,W,C[P+14],z,3275163606);W=f(W,V,Y,X,C[P+3],y,4107603335);X=f(X,W,V,Y,C[P+8],w,1163531501);Y=f(Y,X,W,V,C[P+13],A,2850285829);V=f(V,Y,X,W,C[P+2],z,4243563512);W=f(W,V,Y,X,C[P+7],y,1735328473);X=f(X,W,V,Y,C[P+12],w,2368359562);Y=D(Y,X,W,V,C[P+5],o,4294588738);V=D(V,Y,X,W,C[P+8],m,2272392833);W=D(W,V,Y,X,C[P+11],l,1839030562);X=D(X,W,V,Y,C[P+14],j,4259657740);Y=D(Y,X,W,V,C[P+1],o,2763975236);V=D(V,Y,X,W,C[P+4],m,1272893353);W=D(W,V,Y,X,C[P+7],l,4139469664);X=D(X,W,V,Y,C[P+10],j,3200236656);Y=D(Y,X,W,V,C[P+13],o,681279174);V=D(V,Y,X,W,C[P+0],m,3936430074);W=D(W,V,Y,X,C[P+3],l,3572445317);X=D(X,W,V,Y,C[P+6],j,76029189);Y=D(Y,X,W,V,C[P+9],o,3654602809);V=D(V,Y,X,W,C[P+12],m,3873151461);W=D(W,V,Y,X,C[P+15],l,530742520);X=D(X,W,V,Y,C[P+2],j,3299628645);Y=t(Y,X,W,V,C[P+0],U,4096336452);V=t(V,Y,X,W,C[P+7],T,1126891415);W=t(W,V,Y,X,C[P+14],R,2878612391);X=t(X,W,V,Y,C[P+5],O,4237533241);Y=t(Y,X,W,V,C[P+12],U,1700485571);V=t(V,Y,X,W,C[P+3],T,2399980690);W=t(W,V,Y,X,C[P+10],R,4293915773);X=t(X,W,V,Y,C[P+1],O,2240044497);Y=t(Y,X,W,V,C[P+8],U,1873313359);V=t(V,Y,X,W,C[P+15],T,4264355552);W=t(W,V,Y,X,C[P+6],R,2734768916);X=t(X,W,V,Y,C[P+13],O,1309151649);Y=t(Y,X,W,V,C[P+4],U,4149444226);V=t(V,Y,X,W,C[P+11],T,3174756917);W=t(W,V,Y,X,C[P+2],R,718787259);X=t(X,W,V,Y,C[P+9],O,3951481745);Y=K(Y,h);X=K(X,E);W=K(W,v);V=K(V,g)}var i=B(Y)+B(X)+B(W)+B(V);return i.toLowerCase()};
+</script>
+
+
+<style>
+@import url('https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css');
+@import url('./font/SeoulHangang.css');
+@import url('./font/SeoulHangangJungL.css');
+
+* {
+    -webkit-text-size-adjust: none; /* 아이폰 폰트 자동확대축소 방지 */
+
+    
+    font-family: 'Nanum Barun Gothic';
+    font-weight: 300;
+    /*font-family: 'seoulhangangregular';
+    font-family: 'SeoulHangangJungL';*/
+}
+#bank_pop_txt_acc {
+    word-break:  keep-all;
+    white-space: nowrap;
+}
+textarea {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    -webkit-appearance: none;
+    background-color: #f8f8f8;
+    border: 1px solid #ececec;
+    line-height: 18px!important;
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+}
+textarea::placeholder {
+    color: gray;
+}
+
+img { border:0; }
+span { font-size:12px; color:#6b6b6b;  }
+select { font-size:12px; background-color:#ffffff; }
+
+pre { font-size:12px; }
+ul, li { margin:0px; border:0px; padding:0px; }
+center { font-size:0px; }
+.ui-effects-transfer { border: 2px solid gray;  } /* 샘플담기 효과  border: 4px dotted #4867aa; */
+body { font-size:0px; background-color:#fff; overflow-x:hidden }
+.skin_color { background-color: #d9d9d9; color:#ffffff; } /* #848685 */
+.skin_001 { background-image:url('./img/_bg-01.gif'); color:#fff; }
+.skin_002 { background-image:url('./img/_bg-02.gif'); color:#333; }
+.skin_003 { background-image:url('./img/_bg-03.gif'); color:#fff; }
+.title2 { color:#6b6b6b; font-size:14px; font-weight:bold; padding:10px; background-color:#f2f2f2; border-top:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4; }
+.ch0 { font-size:13px; color:#878787; text-align:left; padding-left:10px; width:66px; }
+.ch0, .cd0 { border-bottom:1px solid #efefef; }
+.btn { cursor:pointer; }
+.btn2 { cursor:pointer;width:87px; height:24px; background-color:#ffffff; text-align:center; line-height:28px; margin-left:5px; border: solid 1px #96979b; display:inline-block;}
+.btn2_fnt {font-size:12px!important; font-weight:bold; color:#96979b }
+.top_btn{ cursor:pointer; background-color:#b6b7bb; text-align:center;  }
+.btm_btn { cursor:pointer; background-color:#b3e5dc; text-align:center; }
+.btn_fnt {font-size:13px!important; font-weight:bold; }
+
+.th_long { vertical-align:top; padding-top:14px!important; }
+
+
+html {
+    -webkit-text-size-adjust: none;
+    
+        
+    overflow-x:hidden;
+    overflow-y:scroll;
+    
+    
+}
+body { overflow:hidden; }
+
+.datetime { font-size:11px!important; color:#a7a7a7;  }
+.photo_subject { font-size:13px; color:#626262; }
+
+.border_focused { border:1px solid black; }
+.border_focusout { border:1px solid #f0f0f0;  }
+
+.register_button {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #666666;
+    color: #333333;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 12px;
+    text-align: center;
+}
+
+
+.ios-11-body-fixed {
+position: fixed;
+width: 100%;
+}
+
+#mcni_wrapper {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    z-index: 11;
+}
+#mcni_img {}
+#mcni_x_btn {
+    cursor: pointer;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    width: 17px;
+    outline: none;
+}
+#mcni_download_btn {
+    cursor: pointer;
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 17px;
+}
+.mcard_top_img {
+    cursor: pointer;
+}
+
+</style>
+
+</head>
+
+
+
+<body bgcolor="#ffffff" style="position: relative;">
+
+<div id="mask" style="position: fixed; z-index: 10; left: 0; top: 0; background-color: #000000; cursor: pointer; display: none; width: 100%; height: 100%;"></div>
+
+
+
+
+
+
+
+<div id="wrapper" style="" alt="before 2018.06.18 pc - w323px">
+
+
+
+
+<script>
+$(function() {
+var head_name = 'home';
+    $('#mcard_top_back_button').on('click', function() {    
+        if (head_name == 'adm') {
+            location.href = mcard_root+'/home.php?uid='+uid
+        } else {
+            history.back()
+        }
+    })
+    
+})
+</script>
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="style_theme_1.css?hash=20221114" />
+<link rel="stylesheet" type="text/css" href="style_color_t1c1.css?hash=20221114" />
+<link rel="stylesheet" type="text/css" href="home.css?hash=20221114" />
+<script>
+var page_name = 'home'
+var mcard_ver = '4';
+var mcard_root = '';
+var skin_ver = '4';
+var wrapper_width = 0
+var wrapper_left_margin = 0
+var skin_margin_dir = '0';
+var m_name = '인찬호';
+var g_name = '정단비';
+var wday = '2023-02-18 13:30';
+var skin_info = '215';
+var venue_name = 'CA웨딩컨벤션';
+var venue_floor = '2층 블리스홀';
+var wposition = 'CA웨딩컨벤션';
+var map_lat = '';
+var map_lng = '';
+var map_addr = '';
+var map_road = '';
+var map_tel = '';
+var map_file_name = '';
+var map_use_online = '';
+var own_hash = '1671378580';
+</script>
+<script language="javascript" type="text/javascript" src="./script.js?hash=20221114"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+
+
+
+<style>
+.mma { border-bottom: 0px solid #d5d5d5; font-size: 0; line-height: 0; position: relative; height: 45px; }
+.mma_on { background-color:#f2f2f2; border:1px solid #d5d5d5; border-bottom:0; }
+.mma_btn { height: 11px; cursor: pointer; }
+</style>
+
+
+
+
+
+<script>
+var firsttouch = 1  // 첫 터치시, 상단메뉴 노출 기능, 0 값을 주면 활성됨
+
+$(function(){
+
+
+    
+
+    menu_height = $('#mma').height()
+
+
+    if (firsttouch == 0) {  // 첫 터치시, 상단메뉴 노출 기능
+        $(window).bind('touchstart', function(){  //touchstart touchmove touchend touchcancel touchforcechange
+            firsttouch = 1
+            $('#mma').show()
+        })
+    }
+
+
+    $('.mma').on('click',function(){
+        var block = $(this).children('img').attr('alt')
+        var posy = $('#'+block+'_section').offset().top - menu_height
+        window.scrollTo(0, posy)
+    })
+
+
+    
+})
+
+
+$(window).bind('scroll',function() {
+
+    $('.mma_btn').each(function(){
+        $(this).attr('src',$(this).attr('src').replace('_on.png','_off.png'))
+    })
+    
+    if ($('#mma_4').attr('src') != undefined && wsc_top > ($('#guest_section').offset().top-menu_height-1)) $('#mma_4').attr('src',$('#mma_4').attr('src').replace('_off.png','_on.png'))  //GUEST
+    else if ($('#mma_3').attr('src') != undefined && wsc_top > ($('#map_section').offset().top-menu_height-1) ) $('#mma_3').attr('src',$('#mma_3').attr('src').replace('_off.png','_on.png'))  //MAP
+    else if ($('#mma_2').attr('src') != undefined && wsc_top > ($('#photo_section').offset().top-menu_height-1) ) $('#mma_2').attr('src',$('#mma_2').attr('src').replace('_off.png','_on.png'))  //PHOTO
+    else $('#mma_1').attr('src',$('#mma_1').attr('src').replace('_off.png','_on.png'))
+
+})
+
+</script>
+
+
+
+
+<div id=mma style="position: fixed; z-index: 10; width: 100%; height: 45px; display: none;">
+<table border=0 cellspacing=0 cellpadding=0 width="100%" height="100%" style=" background-color: #31343c;">
+    <tr align=center valign=middle>
+
+        <td class=mma alt="home">
+            <img class=mma_btn id=mma_1 src="./img/160927_01_01_off.png" alt="home" />
+        </td>
+
+
+                <td class=mma alt="photo">
+            <img class=mma_btn id=mma_2 src="./img/160927_01_02_off.png" alt="photo" />
+
+                    </td>
+        
+
+                <td class=mma alt="map">
+            <img class=mma_btn id=mma_3 src="./img/160927_01_03_off.png" alt="map" />
+        </td>
+        
+
+                <td class=mma alt="guest">
+            <img class=mma_btn id=mma_4 src="./img/160927_01_04_off.png" alt="guest" />
+            
+            <div id=new_guest_icon_block style="display:none;">
+                <div id=new_guest_img style="position:absolute; top: -10px; right: 4px;"><img src=./img/131029_02_02.png width=20 height=20 /></div>
+                <div id=new_guest_cnt style="position:absolute; top:  0px ; right:8px; color:#fff; font-size:11px; text-align:center; width:12px; "></div>
+            </div>
+
+            
+        </td>
+        
+</table>
+</div>
+
+
+
+
+
+
+<div id="scene_spacer_top" style=" background-color: ; "></div>
+
+
+<!-- 메인 설정하기 바로가기 버튼  -->
+<div class="home_settiong_wrapper" style="display: none;">
+    <div class="home_settiong_btn">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#scene_wrapper {
+    line-height: 0;
+    position: relative;
+    min-height: 557px;
+}
+#scene_slider {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    /* top: 244px; */
+}
+#skin_info {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+}
+</style>
+
+
+
+<div id="scene_wrapper">
+
+            <div id="scene_slider">
+                            <img class="scene_photo" src="./scene/ek/eksql11223/6d4a7342c50806474d18ae6e6cdc7c9e.jpg" width="100%" />
+                            <img class="scene_photo" src="./scene/ek/eksql11223/7658978831c79f33e46987375b3aa745.jpg" width="100%" />
+                            <img class="scene_photo" src="./scene/ek/eksql11223/910c8f98a52ecdee7656850d8058d91f.jpg" width="100%" />
+                    </div>
+        <img id="skin_png" src="./skin/215.png?hash=1671378580" width="100%" />
+        <img id="skin_info" src="./scene/ek/eksql11223/skin_info.png?hash=1671378580" />
+
+</div>
+
+
+
+<script src="./jquery/sudoSlider/jquery.sudoSlider.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+       var sudoSlider = $("#scene_slider").sudoSlider({
+        auto:true,
+        effect: "fade",
+        pause: 3000,
+        speed: 1500,
+        boxCols: 6,
+        boxRows: 8,
+        prevNext: false,
+        controlsFade: false,
+        continuous: true
+       });
+       var slides = $("#slider").children().children();
+       var container = $("#effectLinksHolder");
+       var count = 0;
+       $.each($.fn.sudoSlider.effects, function (effectName, effect) {
+           count++;
+           container.append($("<a> " + effectName + " </a> <span>| </span>").click(function () {
+               slides.attr("data-effect", effectName);
+               sudoSlider.stopAnimation();
+               sudoSlider.goToSlide("next");
+           }));
+       });
+       $("#effectCounter").text(count);
+   });
+</script>
+
+
+
+<div id="scene_spacer_bottom" style=" background-color: ; ; position: relative; ">
+    <div id="scene_spacer_bottom_arrow" style="width: 100%; position: absolute; bottom: 40px; text-align: center; display: none;"><img src="./img/arrow_scrolldown.gif" height="45" /></div>
+</div>
+
+<script>
+skin_margin_dir = 2;  //Only use bottom spacer - 2018.08.08
+
+
+$(function(){
+
+
+    $(window).scroll(function(event){
+
+        $('#scene_spacer_bottom_arrow').hide()
+        
+        $('#scene_spacer_bottom').animate({
+            height: 0
+        }, 1000, function(){
+            $('#scene_spacer_bottom').hide()
+        })
+
+    })
+
+
+    //set wrapper size vars
+    wrapper_width = $('#wrapper').width()
+    wrapper_left_margin = $('#wrapper').offset().left
+
+
+    // 랜딩페이지 [정식버전 구매] 클릭으로 접근했을시
+    if ($.cookie('mcard_buy_now') == '1') {
+
+        $.cookie('mcard_buy_now', null, { path: '/' })
+
+                setTimeout(function(){
+            //if (confirm("정식버전 구매가 가능합니다.\n\n결제를 진행할까요?"))
+            location.href='admin_pay.php?ecard='
+        },0)
+        
+    }
+
+
+    
+    setTimeout(function(){
+
+        var scene_size = $('#scene_wrapper').height()
+        if (!scene_size || scene_size == 0) scene_size = 500;  //some phone not return scene_wrapper height (eg, iphone 8)
+
+        if (window.innerHeight > scene_size) {
+
+            var scene_spacer_size = window.innerHeight - scene_size
+            
+            if (scene_spacer_size > 60) {
+                var scene_spacer_bottom_arrow_bottom = (scene_spacer_size - 45) / 2
+                $('#scene_spacer_bottom_arrow').css('bottom', scene_spacer_bottom_arrow_bottom+'px').show()
+                
+            }
+
+            if (skin_margin_dir == 1) {
+                $('#scene_spacer_top').height(scene_spacer_size)
+            }
+            else if (skin_margin_dir == 2) {
+                $('#scene_spacer_bottom').height(scene_spacer_size)
+            }
+            else if (skin_margin_dir == 3) {  //spacer add to both side
+                $('#scene_spacer_top').height(scene_spacer_size/2)
+                $('#scene_spacer_bottom').height(scene_spacer_size/2)
+            }
+
+        }
+
+    }, 400)
+
+    
+
+
+    //Block history.back
+    history.pushState('onload', null, null)
+    window.onpopstate = function (e) {
+        if ($('#photo_view').css('display') != 'none') {
+            photo_view_close()
+            history.pushState('onclick', null, null)
+        }
+    }
+
+
+})
+</script>
+
+
+
+
+
+
+
+<div id="sortable_start_line"></div>
+
+
+
+<!-- 초대인사말 -->
+    <div class="section" id="insa_section" data-section="insa">
+
+        <div class="section_header">
+    <div class="section_header_day day_title_wedding_invit"> wedding invitation </div>
+    <div class="section_header_day day_title_date"> date. </div>
+    <div class="section_header_day day_title_num"> 02/18</div>
+</div>
+
+
+<div id="insa" class="section_body_radius">
+
+    <ul class="insa_title section_title">
+        <li class="section_title_img">
+            <!--background img 이용 -->
+        </li>
+        
+        <li>
+                        두사람, 결혼합니다.     </li>
+    </ul>
+
+        <div class="insa_text">항상&nbsp;베풀어주신&nbsp;사랑과&nbsp;관심에&nbsp;감사드리며&#44;<br />
+한&nbsp;쌍의&nbsp;젊음이&nbsp;사랑과&nbsp;믿음으로<br />
+인생의&nbsp;반려자가&nbsp;되려고&nbsp;합니다.<br />
+이제&nbsp;시작하는&nbsp;새&nbsp;인생의&nbsp;첫걸음에&nbsp;가까이&nbsp;하시어<br />
+축복해&nbsp;주시면&nbsp;감사하겠습니다.</div>   
+
+    <table id="insa_family_tbl">
+            <tr class="insa_name_row">
+                        <td class="insa_parent_block">
+                <div>인명식</div>
+                <div>김미라</div>
+            </td>
+            <td class="insa_rel_block">
+                의            </td>
+            <td class="insa_ord_block" align="center">
+                <span>장남</span>
+            </td>
+                        <td class="insa_self_block">
+                <span>인</span><span>찬호</span>
+            </td>
+        </tr>
+            <tr class="insa_name_row">
+                        <td class="insa_parent_block">
+                <div>정재철</div>
+                <div>이민련</div>
+            </td>
+            <td class="insa_rel_block">
+                의            </td>
+            <td class="insa_ord_block" align="center">
+                <span>장녀</span>
+            </td>
+                        <td class="insa_self_block">
+                <span>정</span><span>단비</span>
+            </td>
+        </tr>
+        </table>
+
+</div>    </div>
+
+<!-- 축하연락처 -->
+    <div class="section" id="phone_section" data-section="phone">
+        <div class="section_header">
+    <div class="section_header_day day_title_wedding_invit"> wedding invitation </div>
+    <div class="section_header_day day_title_date"> date. </div>
+    <div class="section_header_day day_title_num"> 02/18</div>
+</div>
+
+
+
+<div id="contact">
+
+    <ul class="contact_title section_title">
+        <li class="section_title_img">
+            &nbsp;
+        </li>
+        <li>
+            축하 연락처
+        </li>
+    </ul> 
+
+
+
+    <div class="section_content_wrap">
+
+              
+            <div class="contact_inner family_group_block" data-type="a">
+                                    <ul class="contact_row family_member_a1"
+                        data-side="a"
+                    >
+                        <li class="name_block name_a1">
+                            신랑                            인찬호                 
+                        </li>
+                        <a class="contact_icon_block contact_tel_img" href="tel:01023209909">
+                            &nbsp;
+                        </a>
+                        <a class="contact_icon_block contact_msg_img" href="sms:01023209909">
+                            &nbsp;
+                        </a>
+                    </ul>
+                                    <ul class="contact_row family_member_a2"
+                        data-side="a"
+                    >
+                        <li class="name_block name_a2">
+                            혼주                            인명식                 
+                        </li>
+                        <a class="contact_icon_block contact_tel_img" href="tel:01052709909">
+                            &nbsp;
+                        </a>
+                        <a class="contact_icon_block contact_msg_img" href="sms:01052709909">
+                            &nbsp;
+                        </a>
+                    </ul>
+                                    <ul class="contact_row family_member_a3"
+                        data-side="a"
+                    >
+                        <li class="name_block name_a3">
+                            혼주                            김미라                 
+                        </li>
+                        <a class="contact_icon_block contact_tel_img" href="tel:01047626862">
+                            &nbsp;
+                        </a>
+                        <a class="contact_icon_block contact_msg_img" href="sms:01047626862">
+                            &nbsp;
+                        </a>
+                    </ul>
+                
+            </div>
+            
+              
+            <div class="contact_inner family_group_block" data-type="b">
+                                    <ul class="contact_row family_member_b1"
+                        data-side="b"
+                    >
+                        <li class="name_block name_b1">
+                            신부                            정단비                 
+                        </li>
+                        <a class="contact_icon_block contact_tel_img" href="tel:0105451373">
+                            &nbsp;
+                        </a>
+                        <a class="contact_icon_block contact_msg_img" href="sms:0105451373">
+                            &nbsp;
+                        </a>
+                    </ul>
+                                    <ul class="contact_row family_member_b2"
+                        data-side="b"
+                    >
+                        <li class="name_block name_b2">
+                            혼주                            정재철                 
+                        </li>
+                        <a class="contact_icon_block contact_tel_img" href="tel:01045621373">
+                            &nbsp;
+                        </a>
+                        <a class="contact_icon_block contact_msg_img" href="sms:01045621373">
+                            &nbsp;
+                        </a>
+                    </ul>
+                                    <ul class="contact_row family_member_b3"
+                        data-side="b"
+                    >
+                        <li class="name_block name_b3">
+                            혼주                            이민련                 
+                        </li>
+                        <a class="contact_icon_block contact_tel_img" href="tel:01067771373">
+                            &nbsp;
+                        </a>
+                        <a class="contact_icon_block contact_msg_img" href="sms:01067771373">
+                            &nbsp;
+                        </a>
+                    </ul>
+                
+            </div>
+            
+        
+    </div>
+
+</div>
+    </div>
+
+<!-- 달력 -->
+    <div class="section calendar_section" id="calendar_row" data-section="calendar">
+        <div class="section_header">
+    <div class="section_header_day day_title_wedding_invit"> wedding invitation </div>
+    <div class="section_header_day day_title_date"> date. </div>
+    <div class="section_header_day day_title_num"> 02/18</div>
+</div>
+
+
+<div class="section_body_radius">
+    <div class="calendar_wrapper" >
+        <ul class="calendar_title section_title">
+            <li class="section_title_img">
+                <!--background img 이용 -->
+            </li>        
+            <li>
+               날짜<span class="calendar_title_hide">를 확인하세요</span>
+            </li>
+        </ul>
+        <div id="calendar">
+            <div class="calendar_inner">
+                <div class="calendar_ym">
+                    2023.02                </div>
+                <table class='calendar'><caption>February 2023</caption><tr><th class='header'>일</th><th class='header'>월</th><th class='header'>화</th><th class='header'>수</th><th class='header'>목</th><th class='header'>금</th><th class='header'>토</th></tr><tr><td colspan='3'>&nbsp;</td><td class='day' rel='2023-02-01'><span>1</span></td><td class='day' rel='2023-02-02'><span>2</span></td><td class='day' rel='2023-02-03'><span>3</span></td><td class='day' rel='2023-02-04'><span>4</span></td></tr><tr><td class='day' rel='2023-02-05'><span>5</span></td><td class='day' rel='2023-02-06'><span>6</span></td><td class='day' rel='2023-02-07'><span>7</span></td><td class='day' rel='2023-02-08'><span>8</span></td><td class='day' rel='2023-02-09'><span>9</span></td><td class='day' rel='2023-02-10'><span>10</span></td><td class='day' rel='2023-02-11'><span>11</span></td></tr><tr><td class='day' rel='2023-02-12'><span>12</span></td><td class='day' rel='2023-02-13'><span>13</span></td><td class='day' rel='2023-02-14'><span>14</span></td><td class='day' rel='2023-02-15'><span>15</span></td><td class='day' rel='2023-02-16'><span>16</span></td><td class='day' rel='2023-02-17'><span>17</span></td><td class='day dday' rel='2023-02-18'><span>18</span></td></tr><tr><td class='day' rel='2023-02-19'><span>19</span></td><td class='day' rel='2023-02-20'><span>20</span></td><td class='day' rel='2023-02-21'><span>21</span></td><td class='day' rel='2023-02-22'><span>22</span></td><td class='day' rel='2023-02-23'><span>23</span></td><td class='day' rel='2023-02-24'><span>24</span></td><td class='day' rel='2023-02-25'><span>25</span></td></tr><tr><td class='day' rel='2023-02-26'><span>26</span></td><td class='day' rel='2023-02-27'><span>27</span></td><td class='day' rel='2023-02-28'><span>28</span></td><td colspan='4'>&nbsp;</td></tr></table>            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+<!-- 갤러리 -->
+    <div class="section" id="photo_section" data-section="photo">
+        <div class="section_header">
+    <div class="section_header_day day_title_wedding_invit"> wedding invitation </div>
+    <div class="section_header_day day_title_date"> date. </div>
+    <div class="section_header_day day_title_num"> 02/18</div>
+</div>
+
+
+<div class="photo_body_wrapper">
+<ul class="photo_title section_title">
+    <li class="section_title_img">
+        <!--background img 이용 -->
+    </li>        
+    <li>
+        갤러리
+    </li>
+</ul>
+
+
+
+
+
+<div class="pop_bg_layer"></div>
+          
+<div class="photo_pop_relative">  
+
+    <div id="photo_pic_pop_wrapper">
+  
+        <div id="photo_pop_swiper-container">
+            <div class="swiper-wrapper photo_pop_swiper_wrapper">
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/9c5dd3924a01cdaff75c8ecce9ba1e72.jpg" data-key="0" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/c181d428ae2fbe9778596d3a83ff287d.jpg" data-key="1" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/9d385dad3fc4a5b9a4ddcab266119b61.jpg" data-key="2" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/6274092ab8d9bfd59c772fbdea8ff28e.jpg" data-key="3" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/5d845c9ff65242f82f3a1e7c11f8ea69.jpg" data-key="4" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/73bf079d2e1c32c100101b1586941ed2.jpg" data-key="5" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/a074cf19cf107ca7d6c97a442cc4768b.jpg" data-key="6" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/5e751432dd11906c2d4c50224e21a792.jpg" data-key="7" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/deb2e20f92c91ef3303b7e683e9504a2.jpg" data-key="8" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/74222e5cfd66ab1cc12eaf78c9d2d130.jpg" data-key="9" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/3b69bef16be3f55455a813d1f47f71df.jpg" data-key="10" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/b64d5b1af9f44b2894bec03bfd51a017.jpg" data-key="11" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/d5d4bbc86ef700744a3328dc6f337dd8.jpg" data-key="12" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/49f8c97003478f162c22cae8988852fb.jpg" data-key="13" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/a93f225e8cd5db39f267d4f0a6b27600.jpg" data-key="14" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/83911ae4b0c7b78369a41f836d455d72.jpg" data-key="15" />
+                        </div>
+
+                    </div>
+                                    <div class="swiper-slide">
+
+                        <div class="photo_pop_img_wrapper">
+                            <div class="pop_close_btn_wrap">
+                                <div class="pop_close_btn"><!-- css 이용 --></div>
+                            </div>
+                            <img class="photo_pop_img" src="./ecard/photo/e/eksql11223/db413784ead630b18d7f060d41e1719b.jpg" data-key="16" />
+                        </div>
+
+                    </div>
+                            </div>
+        </div>
+        
+    </div>
+
+    <div id="photo_view_wrapper">
+        <div id="photo_view_swiper-container">
+            <div class="swiper-wrapper">
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic swiper-slide-active">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/9c5dd3924a01cdaff75c8ecce9ba1e72.jpg" data-key="0" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/c181d428ae2fbe9778596d3a83ff287d.jpg" data-key="1" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/9d385dad3fc4a5b9a4ddcab266119b61.jpg" data-key="2" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/6274092ab8d9bfd59c772fbdea8ff28e.jpg" data-key="3" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/5d845c9ff65242f82f3a1e7c11f8ea69.jpg" data-key="4" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/73bf079d2e1c32c100101b1586941ed2.jpg" data-key="5" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/a074cf19cf107ca7d6c97a442cc4768b.jpg" data-key="6" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/5e751432dd11906c2d4c50224e21a792.jpg" data-key="7" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/deb2e20f92c91ef3303b7e683e9504a2.jpg" data-key="8" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/74222e5cfd66ab1cc12eaf78c9d2d130.jpg" data-key="9" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/3b69bef16be3f55455a813d1f47f71df.jpg" data-key="10" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/b64d5b1af9f44b2894bec03bfd51a017.jpg" data-key="11" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/d5d4bbc86ef700744a3328dc6f337dd8.jpg" data-key="12" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/49f8c97003478f162c22cae8988852fb.jpg" data-key="13" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/a93f225e8cd5db39f267d4f0a6b27600.jpg" data-key="14" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/83911ae4b0c7b78369a41f836d455d72.jpg" data-key="15" />
+                    </div>
+                                    <div class="swiper-slide photo_view_slide mcard_photo_pic">
+                        <img id="photo_view_img" class="photo_view_img" src="./ecard/photo/e/eksql11223/db413784ead630b18d7f060d41e1719b.jpg" data-key="16" />
+                    </div>
+                            </div>
+        </div>
+        <!-- PREV / NEXT -->
+        <div id="photo_view_btn_row">
+            <div id="photo_view_prev_btn" class="photo_view_prev_btn">
+                &lt;
+            </div>
+            <div id="photo_view_next_btn" class="photo_view_next_btn">
+                &gt;
+            </div>
+        </div>
+    </div> 
+
+</div>
+
+
+<div class="photo_view_sub_title"> 
+    이미지 클릭 시 확대보기가 가능합니다. <br />
+    17장의 사진이 있습니다.
+</div>
+    
+    
+<div id="photo_thmb_wrapper">
+
+    <div id="photo_thmb_swiper-container">
+        <div class="swiper-wrapper">
+            
+                                <div class="swiper-slide">
+                
+                    <img class="photo_thmb_thm_img" src="./thm/9c5dd3924a01cdaff75c8ecce9ba1e72.jpg" data-key="0" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/c181d428ae2fbe9778596d3a83ff287d.jpg" data-key="1" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/9d385dad3fc4a5b9a4ddcab266119b61.jpg" data-key="2" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/6274092ab8d9bfd59c772fbdea8ff28e.jpg" data-key="3" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/5d845c9ff65242f82f3a1e7c11f8ea69.jpg" data-key="4" />
+
+                                </div>
+                
+            
+                                <div class="swiper-slide">
+                
+                    <img class="photo_thmb_thm_img" src="./thm/73bf079d2e1c32c100101b1586941ed2.jpg" data-key="5" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/a074cf19cf107ca7d6c97a442cc4768b.jpg" data-key="6" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/5e751432dd11906c2d4c50224e21a792.jpg" data-key="7" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/deb2e20f92c91ef3303b7e683e9504a2.jpg" data-key="8" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/74222e5cfd66ab1cc12eaf78c9d2d130.jpg" data-key="9" />
+
+                                </div>
+                
+            
+                                <div class="swiper-slide">
+                
+                    <img class="photo_thmb_thm_img" src="./thm/3b69bef16be3f55455a813d1f47f71df.jpg" data-key="10" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/b64d5b1af9f44b2894bec03bfd51a017.jpg" data-key="11" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/d5d4bbc86ef700744a3328dc6f337dd8.jpg" data-key="12" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/49f8c97003478f162c22cae8988852fb.jpg" data-key="13" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/a93f225e8cd5db39f267d4f0a6b27600.jpg" data-key="14" />
+
+                                </div>
+                
+            
+                                <div class="swiper-slide">
+                
+                    <img class="photo_thmb_thm_img" src="./thm/83911ae4b0c7b78369a41f836d455d72.jpg" data-key="15" />
+
+                
+            
+                
+                    <img class="photo_thmb_thm_img" src="./thm/db413784ead630b18d7f060d41e1719b.jpg" data-key="16" />
+
+                                </div>
+                
+                    </div>
+        <div id="photo_thmb_swiper-pagination"></div>
+    </div>
+
+</div>
+
+
+
+
+</div>    </div>
+
+<!-- 오시는길 -->
+    <div class="section" id="map_section" data-section="map">
+        <div class="section_header">
+    <div class="section_header_day day_title_wedding_invit"> wedding invitation </div>
+    <div class="section_header_day day_title_date"> date. </div>
+    <div class="section_header_day day_title_num"> 02/18</div>
+</div>
+
+
+
+<div class="section_body_radius">
+
+    <ul class="map_title section_title">
+        <li class="section_title_img">
+            <!--background img 이용 -->
+        </li>
+        <li>
+            오시는 길
+        </li>
+    </ul> 
+
+    <div class="map_address">
+        <div>CA웨딩컨벤션</div>
+        <div></div>
+            </div>
+
+
+    <!-- 지도 종류 탭 -->
+    
+
+
+
+    <div class="section_body map_section_body">
+
+
+        <!-- 지도 (온라인) -->
+        
+
+        <!-- 보자기 약도 -->
+                <div class="map_object" data-cat="yakdo" data-type="yakdo" style="position: relative; text-align: right;">
+            <img src="./img/130401_01_06.png" class="map_img_zoom_btn" />
+            <img class="map_view_img" src="./bojagicard/image_sample/map/com20190404112735.gif?hash=1671378580" />
+            <br />
+        </div>
+        
+
+        <!-- 업로드 약도 -->
+        
+
+
+        <!-- 네비안내 버튼들 -->
+        <div id="map_navi_row">
+                    </div>
+        
+
+
+        <!-- 교통편 및 주차안내 -->
+        <div id="map_text">
+                    </div>
+
+
+
+        <!-- 약도없음 -->
+        
+
+    </div>
+    <!-- section_body -->
+
+</div>
+<!-- section_body_radius -->
+
+<iframe id="checkframe" name="checkframe" src="about:blank" width=0 height=0 style="position:absolute; left:-100px;"></iframe>            </div>
+
+<!-- 안내사항 -->
+    <div class="section" id="notice_section" data-section="notice">
+        <div class="section_header">
+    <div class="section_header_day day_title_wedding_invit"> wedding invitation </div>
+    <div class="section_header_day day_title_date"> date. </div>
+    <div class="section_header_day day_title_num"> 02/18</div>
+</div>
+
+<div class="section_body_radius">
+
+    <ul class="notice_title section_title">
+        <li class="section_title_img">
+            <!--background img 이용 -->
+        </li>
+        <li>
+            안내사항
+        </li>
+    </ul> 
+
+    <div class="section_wrapper"> 
+        <div class="notice_row_wrapper">
+
+                            <div class="notice_row">                
+                
+                    <div class="notice_row_no">
+                        01                    </div>
+                    
+                    <div class="notice_txt_wrapper">
+                        <div class="notice_row_txt_title">
+                            신부측 피로연                         </div>
+                        <div class="notice_row_txt">
+                            2023년 2월 11일 토요일 11시~14시<br />
+무주읍 내도로174-26 앞섬 체험센터                        </div>
+                    </div>                
+                
+                </div>
+            
+        </div>
+    </div>
+
+</div>
+    </div>
+
+<!-- 축하의마음 전하기 (계좌) -->
+
+    
+            <div class="section" data-section="bank">
+            <div class="section_header">
+    <div class="section_header_day day_title_wedding_invit"> wedding invitation </div>
+    <div class="section_header_day day_title_date"> date. </div>
+    <div class="section_header_day day_title_num"> 02/18</div>
+</div>
+
+
+
+<ul class="bank_title section_title">
+    <li class="section_title_img">
+    </li>
+    <li>
+         축하의 마음 전하기    </li>
+</ul> 
+
+<div class="section_desc">
+    축하의 마음을 담아 축의금을 전달해 보세요. <br>복사 버튼을 클릭해 계좌번호를 복사할 수 있습니다</div>
+
+
+<div class="bank_family_group_block bank_family_group_block_a family_group_tbl"
+    data-type="a" data-side="a"
+>
+   
+        
+        <ul class="family_members family_member_a family_member_a1" data-side="a">
+            <li class="name_block name_a1">
+               부               인명식            </li>
+            <li class="bank_txt_view_btn"
+                data-family_group_type="a"
+                data-bank_name="기업은행"
+                data-bank_num="01052709909"
+            >
+                <span>계좌</span>
+            </li>
+        </ul>
+    
+        
+
+</div>
+<div class="bank_family_group_block bank_family_group_block_b family_group_tbl"
+    data-type="b" data-side="b"
+>
+   
+        
+        <ul class="family_members family_member_b family_member_b1" data-side="b">
+            <li class="name_block name_b1">
+               부               정재철            </li>
+            <li class="bank_txt_view_btn"
+                data-family_group_type="b"
+                data-bank_name="국민은행"
+                data-bank_num="01045621373"
+            >
+                <span>계좌</span>
+            </li>
+        </ul>
+    
+        
+
+</div>
+
+
+
+<!-- 계좌 팝업 -->
+<div id="bank_popup" class="mask_over">
+
+    <div id="bank_pop_title"></div>
+
+    <div id="bank_pop_notice">
+        복사 버튼 클릭 시, 복사됩니다.
+    </div>
+
+    <div id="bank_pop_txts">
+                
+        <ul class="bank_family_group_block">
+            <li id="bank_pop_txt_unm"></li>
+            <li id="bank_pop_txt_acc"></li>
+        </ul>
+
+    </div>
+
+    <div id="bank_pop_btns" class="mcard_button2_row">
+        <div class="mcard_button2 mcard_button2_on" id="bank_pop_copy_btn">
+            복사
+        </div>
+        <div class="mcard_button2" id="bank_pop_close_btn">
+            닫기
+        </div>
+    </div>
+
+
+</div>        </div>
+
+
+<!-- 화환 -->
+    <div class="section" id="flower_wreath_row">
+        <div class="flower_wreath_wrapper">
+        <div>
+        <img src="./img/flower_wreath-banner_flower.png" width="60" />
+    </div>
+        <div>
+        예식일에 맞춰 축하 화환을 전해보세요.<br />
+        복잡한 입력 없이 간편하게<br />
+        축하의 마음을 담아 전하실 수 있습니다.
+    </div>
+    <a class="aff_banner" target="_blank" href="http://agent.maruw.co.kr/mobile/product?shop=bojagicard&idx=f18d940e387c5e82f45eb1c0a9176928">
+    <div>
+        축하 화환 간편 배송
+    </div>
+    </a>
+</div>
+
+
+<script>
+$(function(){
+    $('.aff_banner').on('click', function(){
+        console.log('gtag:'+uid)
+        gtag('event', 'aff_banner_click', {'event_category': 'maruweb', 'event_label': 'flower_wreath', 'uid': uid})
+    })
+
+    $('#flower_wreath_btn_off').on('click', function(){
+        $.cookie('mcard_admin_prev_act', 'flower_wreath', { expires: 90, path: '/' })
+        location.href = '/i/adm.php?uid='+uid+'&conf=flower_wreath'
+    })
+
+})
+</script>
+    </div>
+
+<!--축하 메시지 -->
+
+    <div class="section" id="guest_section">
+        <div class="section_header">
+    <div class="section_header_day day_title_wedding_invit"> wedding invitation </div>
+    <div class="section_header_day day_title_date"> date. </div>
+    <div class="section_header_day day_title_num"> 02/18</div>
+</div>
+
+
+
+<ul class="guest_title section_title">
+    <li class="section_title_img" id="guest_section_title_img">
+        &nbsp;
+    </li>
+    <li>
+        축하 메시지
+    </li>
+</ul> 
+
+
+
+<div class="section_body">
+
+    <div id="guest_reply_add_row"></div>    
+
+    <div id="guest_article_list">
+
+        <div class="guest-swiper-container" style="padding-left: 33px; padding-right: 33px;">
+            <div><!-- class="swiper-wrapper" -->
+
+                
+            </div>
+        </div>
+    
+    </div>
+
+    
+
+
+    
+        
+               
+    
+                    <div class="guest_row_total_wrapper">
+                
+                <div class="guest_row_total_img">
+                    <img src="./img/mcard_guest_no_message_icon.png" height="45" />
+                </div>
+                <div class="guest_row_total_txt">
+                    메시지를 남겨주세요.
+                </div>
+        
+            </div>
+                
+         
+</div>    </div>
+
+<!-- 소식공유 -->
+<div class="section" id="share_section">
+    <script src="sns_kakao_link.js"></script>
+<script src="sns_kakaostory.js"></script>
+
+<style>
+.sns_button {
+    cursor: pointer;
+    margin-left: 5px;
+    height: 30px;
+    width: auto;
+}
+#kakaotalk_preview_wrapper {
+    border: 1px solid #31343c;
+    position: fixed;
+    z-index: 99;
+    top: 70px;
+    max-width: 310px;
+    display: none;
+}
+#kakaotalk_preview_inner {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    background-color: #ffffff;
+    min-width: 310px;
+    position: relative;
+}
+#kakaotalk_preview_close_button {
+    position: absolute;
+    cursor: pointer;
+    height: 35px;
+    width: auto;
+    right: 10px;
+    top: -18px;
+}
+#kakaotalk_preview_title {
+    /*background-color: #f2f2f2;*/
+    background-color: #ffeb33;
+    border-bottom: 1px solid #ececec;
+    font-family: 'Spoqa Han Sans';
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#kakaotalk_preview_body {
+    padding: 20px;
+}
+#kakaotalk_preview_notice_text {
+    font-size: 12px;
+    position: relative;
+}
+
+
+#kakaotalk_preview_notice_text_title {
+    border-bottom: 1px solid #ececec;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    width: 150px;
+}
+#kakaotalk_preview_notice_text_memo {
+    line-height: 18px;
+}
+#kakaotalk_preview_notice_text_memo span {
+    color: #fd4976;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#kakaotalk_preview {
+    padding-right: 12px;
+    height: 202px;
+}
+#kakaotalk_preview_img {
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    width: 150px;
+    height: auto;
+}
+#kakaotalk_preview_mcard_title {
+    color: #333333;
+    font-size: 11px;
+    padding-top: 10px;
+    text-align: center;
+    line-height: 16px;
+}
+
+#kakaotalk_preview_notice, #kakaotalk_preview_txt {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    background-color: #f2f2f2;
+    font-size: 12px;
+}
+#kakaotalk_preview_notice {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+#kakaotalk_preview_txt {
+    padding: 10px;
+    text-align: left;
+    word-break: break-all;
+    word-break : break-all;
+}
+
+#kakao-link-btn_wrapper {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+#kakao-link-btn {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    color: #333333;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 8px;
+    line-height: auto;
+    width: 100%;
+    text-align: center;
+    border-radius: 16px;
+    /*
+    position: absolute;
+    bottom: 0;
+    */
+    width: 148px;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+</style>
+
+<ul class="share_title section_title">
+    <li class="section_title_img">
+        <!--background img 이용 -->
+    </li>
+    <li>
+        소식공유
+    </li>
+</ul> 
+
+<div id="kakaotalk_preview_wrapper" class="mask_over">
+    <div id="kakaotalk_preview_inner">
+        <img id="kakaotalk_preview_close_button" src="./img/btn_close_circle_01.png" />
+        <div id="kakaotalk_preview_title">카카오톡 미리보기</div>
+        <div id="kakaotalk_preview_body">
+            <table cellspacing="0" cellpadding="0" align="center">
+                <tr valign="top">
+                    <td id="kakaotalk_preview" align="center">
+                        <img id="kakaotalk_preview_img" src="./m/img/loading6.gif" />
+                        <div id="kakaotalk_preview_mcard_title">인찬호♡정단비의 결혼식에 초대합니다.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div id="kakao-link-btn_wrapper"><div id="kakao-link-btn">전송하기</div></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- 카카오톡 -->
+
+<div class="share_block">
+    
+    <ul class="share_sns_row">
+        
+        <li class="share_sns_btn share_kakao_btn">
+            <!--<img src="./img/share_btn_icon_kakao.png" />-->
+            <!-- 카카오톡 -->
+        </li>
+
+        <!-- 카카오스토리 -->
+        <li class="share_sns_btn share_kakaostory_btn">
+            &nbsp;
+        </li>
+        <li class="share_sns_btn share_sns_btn_alt share_line_btn">
+            <!--<img src="./img/share_btn_icon_line.png" />-->
+            <!-- 라인 -->
+        </li>
+        <!-- 페이스북 -->
+        <!-- // 페이스북 링크등록 로봇때문에 http://DOMAIN/USERID 사용불가 -->
+        <li class="share_sns_btn share_sns_btn_alt share_facebook_btn">
+            &nbsp;
+        </li>
+        
+    </ul>    
+    
+    <div class="share_bottom">
+        <div>
+            <!-- text css before에 내용있음-->
+        </div>
+        <div class="heart">
+            <!-- css 하트모양 사용 -->    
+        </div>        
+    </div>
+    
+</div>
+
+
+<script>
+$(function() {
+    
+    var info_check = false
+    if (m_name.length < 2) info_check = true
+    if (g_name.length < 2) info_check = true
+
+    // KAKAOTALK share button click
+    $('.share_kakao_btn').bind('click', function() {
+        if (info_check == true) {
+            if (confirm('소식 공유는 [필수항목]과\n신랑 신부님 [이름]이 필요합니다\n\n설정페이지로 이동할까요?')) {
+                location.href = 'adm.php#insa_names'
+            }
+            return false
+        }
+        kakaotalk_preview()
+    })
+
+
+    // KAKAOTALK INITIALIZATION FOR SHARE
+    Kakao.init('a3f20d418a8376972d8ae095212e5446') 
+    Kakao.Link.createDefaultButton({
+      container: '#kakao-link-btn',
+      objectType: 'feed',
+      content: {
+        title: '인찬호♡정단비의 결혼식에 초대합니다.',
+        imageUrl: 'http://bojagicard.com/scene/ek/eksql11223/merge.jpg?1671427491',
+        imageWidth: 640,
+        imageHeight: 852,
+        link: {
+          mobileWebUrl: 'http://bojagicard.com/eksql11223',
+          webUrl: 'http://bojagicard.com/eksql11223'
+        }
+      },
+      buttons: [
+        {
+          title: '모바일청첩장 바로가기',
+          link: {
+            mobileWebUrl: 'http://bojagicard.com/eksql11223',
+            webUrl: 'http://bojagicard.com/eksql11223'
+          }
+    
+        }
+      ]
+    })
+
+    // KAKAOTALK PREVIEW RESTORE TO LOADING
+    $('#kakao-link-btn').bind('click', function() {
+
+     setTimeout(function() {
+            mask(0)
+        $('#kakaotalk_preview_img').attr('src', './m/img/loading6.gif')
+        }, 500)
+        $.get('_sns_kakaotalk_sent.php?uid=eksql11223&logon_id=&image_url=http://bojagicard.com/scene/ek/eksql11223/merge.jpg?1671427491')
+    })
+
+
+    $('#kakaotalk_preview_close_button').bind('click', function() {
+        mask(0)
+        $('#kakaotalk_preview_img').attr('src', './m/img/loading6.gif')
+        
+    })
+
+
+    // KAKAO-STORY
+        
+    
+    // KAKAO-STORY share button click
+    $('.share_kakaostory_btn').on('click', function() {        
+        if (info_check == true) {
+            if (confirm('소식 공유는 [필수항목]과\n신랑 신부님 [이름]이 필요합니다\n\n설정페이지로 이동할까요?')) {
+                location.href = 'adm.php#insa_names'
+            }
+            return false
+        }
+        var url = '_sns_kakaostory_img.php?uid='+uid+'&post=인찬호♡정단비의 모바일청첩장입니다. http://bojagicard.com/eksql11223&appid=m.bojagicard.com&appver=1.0&apiver=1.0&appname=모바일청첩장&title=인찬호♡정단비의 모바일청첩장&desc=http://bojagicard.com/eksql11223&imageurl=http://bojagicard.com/scene/ek/eksql11223/merge.jpg'
+        location.href = url
+    })
+
+    //LINE share button click
+    $('.share_line_btn').on('click', function() {
+        if (info_check == true) {
+            if (confirm('소식 공유는 [필수항목]과\n신랑 신부님 [이름]이 필요합니다\n\n설정페이지로 이동할까요?')) {
+            location.href = 'adm.php#insa_names'
+        }
+            return false
+        }
+        sns_share_line()
+    })
+
+    // FACEBOOK share button click
+    $('.share_facebook_btn').on('click', function() {
+        if (info_check == true) {
+            if (confirm('소식 공유는 [필수항목]과\n신랑 신부님 [이름]이 필요합니다\n\n설정페이지로 이동할까요?')) {
+            location.href = 'adm.php#insa_names'
+        }
+            return false
+        }
+        var url = '//m.facebook.com/sharer.php?u=http://bojagicard.com/i/home.php?uid='+uid
+        window.open(url, '', 'width=600,height=600')
+    })
+
+
+})
+
+/* function */
+function sns_share_line() {
+    var shareInfo = '인찬호♡정단비의 결혼식에 초대합니다.\n'
+    shareInfo += 'http://bojagicard.com/' + uid
+    var url = "http://line.me/R/msg/text/?" + encodeURIComponent(shareInfo)
+    var a = window.open(url, 'Line', '')
+    if (a) a.focus()
+}
+
+
+
+function kakaotalk_preview() {
+
+    mask(0.7)
+    $('#kakaotalk_preview_wrapper').show()
+
+    var left_px = $('#wrapper').offset().left + ($('#wrapper').width() - $('#kakaotalk_preview_wrapper').width()) / 2
+    
+    $('#kakaotalk_preview_wrapper').css({
+        'left': left_px+'px'
+    })
+
+    setTimeout(function() {
+        $.ajax({
+            async: false,
+            url: '/common/scene_text_gen.php?uid='+uid,
+            success: function(data) {
+    
+                $.ajax({
+                    async: false,
+                    url: 'scene_merge.php?use=kakaotalk&uid='+uid,
+                    success: function(data) {
+    
+                        var unix = Math.round(+new Date()/1000);
+                        var img_src = '/scene/ek/eksql11223/merge.jpg?hash='+unix
+                        $('#kakaotalk_preview_img').attr('src', img_src)
+    
+                    }
+                })
+    
+            }
+        })
+    }, 200)
+
+}
+</script></div>
+
+
+
+
+
+<div style="clear:both;"></div>
+
+
+
+</div><!-- tail block -->
+
+
+
+<div id="doc_bottom"></div>
+
+
+
+
+</div><!-- wrapper -->
+
+
+<style>
+#photo_view {
+    /* !! Do not set display none here !! */
+    background-color: white;  /* background-color: #b5b7ba; */
+    padding-bottom: 170px;  /* reply_add_wrapper height is 140px */
+}
+#photo_view_top {
+    background-color: #262b3e;
+    height: 45px;
+    vertical-align: middle;
+    position: relative;
+}
+#photo_view_title {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    height: 45px;
+    line-height: 48px;
+    padding-left: 18px;
+}
+
+#photo_view_top_dummy {
+    height: 45px;
+    display: none;
+}
+
+#photo_view_close_button {
+    cursor: pointer;
+    height: 45px;
+    width: auto;
+    position: absolute; right: 0; top: 0;
+}
+#photo_view_menu_open_button {
+    cursor: pointer;
+    width: auto;
+    height: 100%;
+    position: absolute; right: 0; top: 0;
+}
+.photo_view_img_wrapper {
+    position: relative;
+}
+.photo_view_swipe_guide {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    top: 38%;
+    z-index: 99;
+    display: none;
+}
+
+
+
+
+#photo_view_console td {
+    line-height: auto;
+    font-size: 14px;
+}
+
+.swiper-slide {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+
+.photo_view_mid {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    border-bottom: 1px solid #eaeaea;
+    height: 55px;
+    line-height: 55px;
+    position: relative;
+}
+.photo_view_slide_button {
+    height: 19px;
+    position: absolute;
+    top: 17px;
+}
+
+.photo_view_memo {
+    font-size: 12px;
+    padding-top: 20px;
+}
+.photo_reply_counter {
+    line-height: 100%; padding-left: 7px; padding-right: 15px;
+}
+</style>
+
+<div id="photo_view">
+
+    <div id="photo_view_top">
+        <div id="photo_view_title">PHOTO</div>
+        <img id="photo_view_close_button" src="./img/button_x_01_with_bg.png" />
+    </div>
+
+    <div id="photo_view_top_dummy"></div>
+
+
+    <div id="photo_container" class="swiper-container">
+
+        <div class="swiper-wrapper">
+        
+            <div class="swiper-slide" data-idx="3039927">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/9c5dd3924a01cdaff75c8ecce9ba1e72.jpg" data-src_original="./ecard/photo/e/eksql11223/9c5dd3924a01cdaff75c8ecce9ba1e72.jpg" class="photo_view_img" data-photo_idx="3039927" data-photo_no="1" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; display: none;" />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039927">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039927">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039927">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039927">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039931">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/c181d428ae2fbe9778596d3a83ff287d.jpg" data-src_original="./ecard/photo/e/eksql11223/c181d428ae2fbe9778596d3a83ff287d.jpg" class="photo_view_img" data-photo_idx="3039931" data-photo_no="2" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039931">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039931">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039931">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039931">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039932">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/9d385dad3fc4a5b9a4ddcab266119b61.jpg" data-src_original="./ecard/photo/e/eksql11223/9d385dad3fc4a5b9a4ddcab266119b61.jpg" class="photo_view_img" data-photo_idx="3039932" data-photo_no="3" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039932">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039932">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039932">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039932">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039933">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/6274092ab8d9bfd59c772fbdea8ff28e.jpg" data-src_original="./ecard/photo/e/eksql11223/6274092ab8d9bfd59c772fbdea8ff28e.jpg" class="photo_view_img" data-photo_idx="3039933" data-photo_no="4" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039933">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039933">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039933">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039933">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039934">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/5d845c9ff65242f82f3a1e7c11f8ea69.jpg" data-src_original="./ecard/photo/e/eksql11223/5d845c9ff65242f82f3a1e7c11f8ea69.jpg" class="photo_view_img" data-photo_idx="3039934" data-photo_no="5" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039934">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039934">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039934">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039934">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039935">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/73bf079d2e1c32c100101b1586941ed2.jpg" data-src_original="./ecard/photo/e/eksql11223/73bf079d2e1c32c100101b1586941ed2.jpg" class="photo_view_img" data-photo_idx="3039935" data-photo_no="6" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039935">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039935">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039935">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039935">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039936">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/a074cf19cf107ca7d6c97a442cc4768b.jpg" data-src_original="./ecard/photo/e/eksql11223/a074cf19cf107ca7d6c97a442cc4768b.jpg" class="photo_view_img" data-photo_idx="3039936" data-photo_no="7" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039936">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039936">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039936">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039936">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039937">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/5e751432dd11906c2d4c50224e21a792.jpg" data-src_original="./ecard/photo/e/eksql11223/5e751432dd11906c2d4c50224e21a792.jpg" class="photo_view_img" data-photo_idx="3039937" data-photo_no="8" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039937">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039937">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039937">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039937">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039938">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/deb2e20f92c91ef3303b7e683e9504a2.jpg" data-src_original="./ecard/photo/e/eksql11223/deb2e20f92c91ef3303b7e683e9504a2.jpg" class="photo_view_img" data-photo_idx="3039938" data-photo_no="9" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039938">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039938">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039938">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039938">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039939">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/74222e5cfd66ab1cc12eaf78c9d2d130.jpg" data-src_original="./ecard/photo/e/eksql11223/74222e5cfd66ab1cc12eaf78c9d2d130.jpg" class="photo_view_img" data-photo_idx="3039939" data-photo_no="10" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039939">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039939">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039939">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039939">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039940">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/3b69bef16be3f55455a813d1f47f71df.jpg" data-src_original="./ecard/photo/e/eksql11223/3b69bef16be3f55455a813d1f47f71df.jpg" class="photo_view_img" data-photo_idx="3039940" data-photo_no="11" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039940">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039940">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039940">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039940">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039941">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/b64d5b1af9f44b2894bec03bfd51a017.jpg" data-src_original="./ecard/photo/e/eksql11223/b64d5b1af9f44b2894bec03bfd51a017.jpg" class="photo_view_img" data-photo_idx="3039941" data-photo_no="12" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039941">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039941">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039941">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039941">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039942">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/d5d4bbc86ef700744a3328dc6f337dd8.jpg" data-src_original="./ecard/photo/e/eksql11223/d5d4bbc86ef700744a3328dc6f337dd8.jpg" class="photo_view_img" data-photo_idx="3039942" data-photo_no="13" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039942">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039942">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039942">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039942">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039943">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/49f8c97003478f162c22cae8988852fb.jpg" data-src_original="./ecard/photo/e/eksql11223/49f8c97003478f162c22cae8988852fb.jpg" class="photo_view_img" data-photo_idx="3039943" data-photo_no="14" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039943">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039943">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039943">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039943">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039945">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/a93f225e8cd5db39f267d4f0a6b27600.jpg" data-src_original="./ecard/photo/e/eksql11223/a93f225e8cd5db39f267d4f0a6b27600.jpg" class="photo_view_img" data-photo_idx="3039945" data-photo_no="15" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039945">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039945">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039945">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039945">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3039949">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/83911ae4b0c7b78369a41f836d455d72.jpg" data-src_original="./ecard/photo/e/eksql11223/83911ae4b0c7b78369a41f836d455d72.jpg" class="photo_view_img" data-photo_idx="3039949" data-photo_no="16" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3039949">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3039949">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3039949">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3039949">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+        
+            <div class="swiper-slide" data-idx="3051974">
+
+
+                <!-- 상단영역 -->
+                                <div style="height: 15px; position: relative;">
+
+              
+
+                </div>
+
+
+                <!-- photo img -->
+                <div class="photo_view_img_wrapper">
+
+                    
+                        <img src="./thm/db413784ead630b18d7f060d41e1719b.jpg" data-src_original="./ecard/photo/e/eksql11223/db413784ead630b18d7f060d41e1719b.jpg" class="photo_view_img" data-photo_idx="3051974" data-photo_no="17" data-is_video='' style="margin-top: 4px;" />
+
+                    
+                    
+                </div>
+
+
+
+                <!-- 중단영역 -->
+                <div class="photo_view_mid">
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_left_button" src="./img/photo_view-button_left.png" style="left: 0; " />
+
+
+                    <table id="photo_view_console" cellspacing="0" cellpadding="0" align="center" height="100%">
+                        <tr>
+                                                        <td class="photo_view_heart_button" data-idx="3051974">
+                                <!--<img src="./img/photo_view-icon_heart.png" height="21" />-->
+                            </td>
+                            <td class="photo_view_heart_count" data-idx="3051974">
+                                0                            </td>
+                            <td style="line-height: 100%;">
+                                <img src="./img/photo_view-icon_reply.png" height="21" />
+                            </td>
+                            <td class="photo_reply_counter" data-idx="3051974">
+                                0                            </td>
+                                                    </tr>
+
+                    </table>
+
+                    <img class="photo_view_slide_button" id="photo_view_slide_right_button" src="./img/photo_view-button_right.png" style="right: 0; " />
+
+                </div>
+
+                <div class="photo_view_memo">
+                                    </div>
+
+                <div style="padding-top: 6px; padding-bottom: 6px;">
+                                                        </div>
+
+
+                <div class="reply_list" data-idx="3051974">
+
+    
+</div>
+
+<div style="clear: both;"></div>
+
+
+            </div>
+
+                </div><!-- swiper-wrapper end -->
+
+    </div>
+
+</div>
+
+
+<style>
+.guest_user_input {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 1px solid #ececec;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 11px;
+    font-size: 16px;
+}
+
+</style>
+
+<div class="mask_over form_layer" id="guest_user_form" style="font-size: 12px;">
+
+    <img class="form_close_button" id="guest_user_form_close_button" src="./img/button_x_01_black.png" height="17" />
+    <div class="form_title">
+        이름과 이메일을 입력하시면<br />
+        등록이 완료됩니다!
+    </div>
+
+    <div><input type="text" class="guest_user_input" name="guest_user_name" id="guest_user_name" maxlength="50" placeholder="이름(본인이름)" value="" /></div>
+    <div><input type="text" class="guest_user_input" name="guest_user_mail" id="guest_user_mail" maxlength="99" placeholder="이메일(댓글 알림 및 글 수정 용도)" value="" /></div>
+    <div style="padding-top: 5px; padding-bottom: 10px;">
+        <div class="register_button" id="guest_user_form_submit_button">등록하기</div>
+    </div>
+
+</div>
+
+<script>
+function email_check(email) {
+
+    var result = true
+    var re = /^[a-z0-9@.\-_]+$/i
+    result = re.test(email)
+
+    if (result) {
+        re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        result = re.test(email)
+    }
+
+    return result
+
+}
+
+
+$(function(){
+
+
+    //Guest form submit
+    $('#guest_user_form_submit_button').on('click', function(){
+
+        if ($('input[name=guest_user_name]').val().length < 2) {
+    
+            alert('이름을 입력해주세요')
+            $('input[name=guest_user_name]').focus()
+    
+        } else if ($('input[name=guest_user_mail]').val().length < 8) {
+    
+            alert('메일주소를 확인해주세요.')
+            $('input[name=guest_user_mail]').focus()
+    
+        } else if (email_check($('input[name=guest_user_mail]').val()) == false) {
+
+            alert('메일주소를 확인해주세요.')
+            $('input[name=guest_user_mail]').focus()
+
+        } else {
+
+            var user_name = $('input[name=guest_user_name]').val().trim()
+            var user_mail = $('input[name=guest_user_mail]').val().trim()
+            $.cookie('mcard_guest_user_name', user_name, { 'path': '/', 'expires': 10*365 })
+            $.cookie('mcard_guest_user_mail', user_mail, { 'path': '/', 'expires': 10*365 })
+
+            $('#guest_user_form').hide()
+            mask(0)
+
+            reply_send()
+    
+        }
+
+    })
+
+})
+
+
+</script>
+
+
+
+<!-- 메뉴 -->
+<style>
+#photo_view_menu {
+    display: none;
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    position: fixed; z-index: 11; top: 60px; background-color: #ffffff;
+    padding: 20px;
+}
+
+#photo_view_menu div {
+    cursor: pointer;
+    font-size: 12px; line-height: 30px;
+}
+
+.photo_view_heart_button {
+    line-height: 100%; cursor: pointer;
+}
+.photo_view_heart_count {
+    line-height: 100%; padding-left: 7px; padding-right: 15px;
+}
+#photo_view_slide_left_button, #photo_view_slide_right_button {
+    cursor: pointer;
+}
+</style>
+
+<div class="mask_over" id="photo_view_menu">
+    </div>
+
+
+
+
+
+<script>
+var slider
+var use_photo_comment = '1';
+var use_photo_zoom = false;
+
+function photo_view(obj) {
+
+    mask(0.5)
+
+    photo_idx = $(obj).data('photo_idx')
+
+    var slide_to = Number($(obj).data('photo_no')) - 1
+    slider.slideTo(slide_to, 0)
+
+    //console.log($('.photo_view_img[data-photo_idx='+photo_idx+']').attr('src'))
+    $('.photo_view_img[data-photo_idx='+photo_idx+']').each(function(){
+        $(this).attr('src', $(this).attr('src').replace('reqfor=load', 'reqfor=view'))
+    })
+    
+
+
+    //뺴꼼
+    $('#photo_view').css({
+        'display': 'block', 
+        'position': 'fixed', 
+        'z-index': '3', 
+        'top': (window.innerHeight-42)+'px', 
+        'left': $('#photo_section').offset().left
+    })
+
+
+    //슬라이드 업
+    setTimeout(function(){
+
+        $('#photo_view').animate({ top: 0 }, 250, function(){
+    
+            $('#wrapper').hide()
+            $('#photo_view').css({ 'position': 'static' })
+            window.scrollTo(0, 0)
+            
+            $('#photo_view_top').css({
+                'position': 'fixed',
+                'z-index': '3', 
+                'top': 0, 
+                'left': wrapper_left_margin,
+                'width': wrapper_width
+            })
+
+            $('#photo_view_top_dummy').css({
+                'display': 'block'
+            })
+            
+            if (use_photo_comment == 1) {
+                reply_add_row_visible = true
+                $('#reply_add_wrapper').css({ 'bottom': 0 })
+                msg_textarea_init()
+            }
+    
+        })
+        
+    },300)
+
+
+    setTimeout(function(){
+
+        mask(0)
+
+    },600)
+
+}
+
+
+function photo_view_close() {
+
+    $('#photo_view').css({ 'display': 'none', 'bottom': '00px', 'width': wrapper_width+'px' })
+    $('#wrapper').css({ 'display': 'block' })
+    window.scrollTo(0, $('#photo_section').offset().top-45)
+
+    $('#photo_view_top_dummy').hide()
+    $('#photo_view_top').css({
+        'position': 'static',
+        'top': 0, 
+        'left': 0,
+        'width': wrapper_width
+    })
+
+    msg_textarea_init()
+
+}
+
+
+function photo_heart(idx) {
+   // if (confirm('좋아요?')) {
+
+        $.get('photo_view_heart_proc.php?idx='+idx, function(data) {  //return as json
+
+            var result = JSON.parse(data)
+
+            if (result.error_code == 0) {
+                $('.photo_view_heart_count[data-idx='+idx+']').text(result.heart_count)
+                $.cookie('mcard_heart['+idx+']', 1, { 'path': '/', 'expires': 10*365 })
+                $('.photo_view_heart_button[data-idx='+idx+']').addClass('on')
+                
+
+            } else if (result.error_code == 2) {
+               alert('이미 좋아요 하셨습니다')
+            }
+
+        })
+
+    //}
+}
+
+
+function photo_write(idx) {
+    var url = 'photo_write.php?ecard=eksql11223'
+    if (idx > 0) url = 'photo_write.php?ecard=eksql11223&idx='+photo_idx
+    location.href = url
+}
+
+
+function photo_delete() {llllllllllllllllll
+    if (confirm('사진과 함께 댓글도 모두 삭제됩니다.\n\n삭제하시겠습니까?')) {
+        location.href = 'photo_del_proc.php?uid=eksql11223&idx='+photo_idx
+    }
+}
+
+
+
+$(function(){
+    
+   $('.photo_view_heart_button').each(function() {
+        var heart_idx = $(this).data('idx')
+        if ($.cookie('mcard_heart['+heart_idx+']') == '1' ) {
+            $('.photo_view_heart_button[data-idx='+heart_idx+']').addClass('on')
+        }
+    })
+
+
+    $('.photo_view_img, .photo_view_video').bind('click', function(){})
+
+    //if (uid == 'onave') use_photo_zoom = true;
+    if (navigator.userAgent.indexOf('Mobile') > -1 && navigator.userAgent.indexOf('Android') > -1) {
+        if (navigator.userAgent.indexOf('Chrome/8') > -1) use_photo_zoom = true;
+        if (navigator.userAgent.indexOf('KAKAOTALK') > -1) use_photo_zoom = true;
+        if (navigator.userAgent.indexOf('NAVER') > -1) use_photo_zoom = true;
+    }
+    
+
+    if (use_photo_zoom) {
+    
+    $('.photo_view_img').bind('click', function(){
+        //console.log($(this).data('src_original'))
+       // window.open('photo_view_zoom.php?src='+$(this).data('src_original'),'','');
+    })
+    }
+
+    $('.photo_view_video').bind('click', function(){
+        window.open('https://mcard2.bojagicard.com/mcard/photo_view_zoom.php?fn='+$(this).data('src_original'));  // 2019.10.15 video only sep
+    })
+
+
+    $('#photo_view_close_button').on('click', function(){
+        photo_view_close()
+    })
+
+    //Photo menu style
+    $('#photo_view_menu').width(wrapper_width-60)
+    $('#photo_view_menu').css('left', wrapper_left_margin+30+'px')
+
+
+    $('#photo_view_slide_left_button').live('click', function(){
+        slider.slidePrev()
+    })
+
+    $('#photo_view_slide_right_button').live('click', function(){
+        slider.slideNext()
+    })
+
+    $('#photo_view_menu_open_button').live('click', function(){
+        photo_idx = $(this).data('idx')
+        mask(0.7)
+        $('#photo_view_menu').show()
+    })
+
+    $('.photo_view_heart_button').live('click', function(){
+        var idx = $(this).data('idx')
+        photo_heart(idx)
+    })
+
+    $('.photo_view_edit_button').live('click', function(){
+        photo_write(photo_idx)
+    })
+
+
+
+
+    /*
+        initialize photo view
+                                 */
+
+    $('#photo_view').css({
+        'margin': 'auto',
+        'width': wrapper_width+'px'
+    })
+
+    $('#photo_container').css({
+        'width': wrapper_width+'px'
+    })
+
+    slider = new Swiper(document.getElementById('photo_container'), {
+    
+        loop: false,
+        autoHeight: false,
+        on: {
+            slideChangeTransitionStart: function(e){
+                photo_idx = $('img[data-photo_no='+(slider.activeIndex+1)+']').data('photo_idx')
+                $('.photo_view_img[data-photo_idx='+photo_idx+']').each(function(){
+                    $(this).attr('src', $(this).attr('src').replace('reqfor=load', 'reqfor=view'))
+                })
+            },
+            slideChangeTransitionEnd: function(e){
+    
+                photo_idx = $('img[data-photo_no='+(slider.activeIndex+1)+']').data('photo_idx')
+    
+                if ($('#photo_view_animater').length == 0) {
+                    if ($('#photo_view').css('display') != 'none') {
+                        $('html, body').animate({ scrollTop: 0 }, 100)
+                    }
+                }
+                
+                $.cookie('photo_view_swiped_check', 1)
+                $('.photo_view_swipe_guide').hide()
+
+
+    
+            }
+        }
+    
+    })
+
+    $('#photo_view').hide()
+
+    //스와이프 가이드 화살표 이미지
+    if (!$.cookie('photo_view_swiped_check')) {
+        $('.photo_view_swipe_guide').show()
+    }
+
+})
+
+</script>
+<style>
+#msg_emoticon_list_wrapper {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    border: 1px solid #999999;
+    position: fixed; z-index: 11; top: 50px; background-color: #ffffff;
+    height: 122px;
+    width: 320px;
+    padding-top: 15px;
+    opacity: 0;
+            display: none;
+    }
+#msg_emoticon_list_swiper_wrapper {
+    position: relative;
+    margin: auto;
+    width: 320px;
+}
+.msg_emoticon_list_img {
+    height: 40px; width: 40px; margin: 15px;
+}
+.msg_emoticon_list_lr_button {
+    height: 15px;
+    width: auto;
+    position: absolute;
+    top: 42px;
+}
+#msg_emoticon_list_l_button {
+    left: 15px;
+}
+#msg_emoticon_list_r_button {
+    right: 15px;
+}
+#msg_emoticon_list_pagination {
+    width: 100%;
+}
+.swiper-pagination-bullet {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.swiper-pagination-bullet:last-child {
+    margin-right: 0;
+}
+.swiper-pagination-bullet-active {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    background-color: #fff;
+    border: 2px solid #fe86a4;
+}
+</style>
+
+
+
+<div class="mask_over" id="msg_emoticon_list_wrapper">
+
+    <div id="msg_emoticon_list_swiper_wrapper">
+    
+        <div class="swiper-container" id="msg_emoticon_list_swiper">
+            <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                            <img class="msg_emoticon_list_img" src="./img/emo01.png" data-emo="emo01.png" />
+                                                                                <img class="msg_emoticon_list_img" src="./img/emo02.png" data-emo="emo02.png" />
+                                                                                <img class="msg_emoticon_list_img" src="./img/emo03.png" data-emo="emo03.png" />
+                                                                                <img class="msg_emoticon_list_img" src="./img/emo04.png" data-emo="emo04.png" />
+                                        </div>
+                                                                            <div class="swiper-slide">
+                                            <img class="msg_emoticon_list_img" src="./img/emo05.png" data-emo="emo05.png" />
+                                                                                <img class="msg_emoticon_list_img" src="./img/emo06.png" data-emo="emo06.png" />
+                                                                                <img class="msg_emoticon_list_img" src="./img/emo07.png" data-emo="emo07.png" />
+                                                                                <img class="msg_emoticon_list_img" src="./img/emo08.png" data-emo="emo08.png" />
+                                        </div>
+                                                                            <div class="swiper-slide">
+                                            <img class="msg_emoticon_list_img" src="./img/emo09.png" data-emo="emo09.png" />
+                                                                                <img class="msg_emoticon_list_img" src="./img/emo10.png" data-emo="emo10.png" />
+                                                                                <img class="msg_emoticon_list_img" src="./img/emo11.png" data-emo="emo11.png" />
+                                                                                <img class="msg_emoticon_list_img" src="./img/emo12.png" data-emo="emo12.png" />
+                                        </div>
+                                                </div>
+        </div>
+
+    </div>
+
+    <img class="msg_emoticon_list_lr_button" id="msg_emoticon_list_l_button" src="./img/msg_emoticon_list_l_button.png" />
+    <img class="msg_emoticon_list_lr_button" id="msg_emoticon_list_r_button" src="./img/msg_emoticon_list_r_button.png" />
+    <div class="swiper-pagination" id="msg_emoticon_list_pagination"></div>
+
+
+</div>
+
+
+
+<script>
+var msg_emoticon_idx = 0
+var msg_emoticon_slider
+
+msg_emoticon_slider = new Swiper(document.getElementById('msg_emoticon_list_swiper'), {
+    loop: false,
+    autoHeight: false,
+        pagination: {
+            el: '.swiper-pagination'
+        }
+})
+
+
+$(function(){
+
+    /*
+         EMOTICON
+                     */
+
+    //이모티콘 아이콘 클릭시 (리스트 노출)
+    $('.msg_icon_img').live('click', function(){
+
+        if ($(this).data('mail') == $.cookie('mcard_guest_user_mail') || uid == 'sample101') {
+            msg_emoticon_idx = $(this).data('idx')
+            $('#msg_emoticon_list_wrapper').show()
+            mask(0.4)
+        }
+
+    })
+
+
+    //이모티콘 리스트 초기화
+    setTimeout(function(){
+        $('#msg_emoticon_list_wrapper').css({
+            'width': $('#wrapper').width()+'px',
+            'left': $('#wrapper').offset().left+'px'
+        })
+        $('#msg_emoticon_list_swiper_wrapper').css({
+            'width': $('#wrapper').width()-60+'px'
+        })
+    }, 200)
+
+    //이모티콘 리스트 슬라이더 적용
+    setTimeout(function(){
+    }, 1000)
+
+    //이모티콘 리스트 숨김처리
+    setTimeout(function(){
+        $('#msg_emoticon_list_wrapper').css({
+            'opacity': '1',
+            'display': 'none'
+        })
+    }, 1200)
+
+
+    //이모티콘 리스트에서, 사용할 이모티콘 선택했을시
+    $('.msg_emoticon_list_img').live('click', function(){
+
+        var idx = msg_emoticon_idx
+        var emo = $(this).data('emo')
+        var url = '_msg_emo_proc.php?uid='+uid+'&area=guest&idx='+idx+'&emo='+emo
+        $.get(url)
+
+        $('.msg_icon_img[data-idx='+msg_emoticon_idx+']').attr('src', $(this).attr('src'))
+        $('#msg_emoticon_list_wrapper').hide()
+        mask(0)
+
+    })
+
+    //슬라이드 좌-우 버튼
+    $('#msg_emoticon_list_l_button').live('click', function(){
+        msg_emoticon_slider.slidePrev()
+    })
+    $('#msg_emoticon_list_r_button').live('click', function(){
+        msg_emoticon_slider.slideNext()
+    })
+
+
+})
+
+
+$(window).bind('scroll', function() {
+
+    $('#msg_emoticon_list_wrapper').hide()
+
+})
+
+
+</script><style>
+#reply_add_row {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+#reply_submit_button {
+    border-color: #8d9398;
+    color: #333333;
+}
+#msg_textarea {
+    
+}
+.msg_textarea_heart {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    background-image: url('./img/mcard_msg_placeholder_heart.png');
+    background-repeat: no-repeat;
+    background-position: 13px 11px;
+    background-size: 12px 13px;
+    /* text-indent: 20px; */
+    padding-left: 27px;
+    
+}
+
+#reply_add_wrapper {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #cfcfcf;
+    width: 100%;
+}
+
+.textarea_single_row {
+    font-size: 16px;
+}
+
+</style>
+
+
+<div id="reply_add_wrapper">
+
+    <div id="reply_add_row">
+    
+        <div style="padding-bottom: 10px;">
+            <textarea class="textarea_single_row msg_textarea_heart" id="msg_textarea" alt="1"></textarea>
+        </div>
+        
+        <div class="register_button" id="reply_submit_button">
+            등록하기
+        </div>
+    
+    </div>
+
+</div>
+
+<div id="reply_add_wrapper_shadow"></div>
+
+
+<script>
+var msg_textarea_length = 0
+
+function msg_textarea_init() {
+
+    var reply_placeholder = '축하 메시지를 남겨주세요'
+    if ($('#photo_view').css('display') != 'none') var reply_placeholder = '사진에 댓글을 남겨주세요'
+
+    if ($.cookie('mcard_guest_user_name')) {
+        reply_placeholder = $.cookie('mcard_guest_user_name')+'님, '+reply_placeholder
+    }
+    
+    $('#msg_textarea').attr('placeholder', reply_placeholder)
+    .attr('placeholder_default', reply_placeholder)
+
+}
+
+
+
+$(function(){
+
+    if (uid == 'onave') {  // 테스트용으로 사용하세요
+        //console.log('cookie deleted')
+        //$.cookie('mcard_guest_user_name', '테스트')
+        //$.cookie('mcard_guest_user_mail', 'noe@bojagicard.com')
+        //$.cookie('mcard_guest_user_name', null)
+        //$.cookie('mcard_guest_user_mail', null)
+        //$.cookie('mcard_guest_user_name', null, {path: '/'})
+        //$.cookie('mcard_guest_user_mail', null, {path: '/'})
+    }
+
+    //축하글, 사진댓글 입력란 초기화
+    msg_textarea_init()
+
+
+    setTimeout(function(){
+        $('#reply_add_wrapper_shadow').css({
+            //'background-color': $('#reply_add_wrapper').css('background-color')
+            'background-color': '#21242d',
+            'height': $('#reply_add_wrapper').height() + 50 + 'px',
+            'width': $('#wrapper').css('width'),
+            'margin': 'auto'
+        })
+    }, 100)
+
+
+    setTimeout(function(){
+        $('#reply_add_wrapper').css({
+            'bottom': (0-$('#reply_add_wrapper').outerHeight())+'px',
+            'position': 'fixed',
+            'z-index': '5',
+            'width': $('#wrapper').width()+'px',
+            'left': $('#wrapper').offset().left+'px'
+        })
+    }, 100)
+
+
+
+    // ** [등록하기] 버튼 상황따라 활성 <-> 비활성
+    $('#msg_textarea').on('keyup', function(e){
+
+        if (msg_textarea_length == 0 && e.keyCode == 8) {
+            msg_root = 0
+            msg_textarea_init()
+        }
+
+        if ($(this).val().trim().length > 0) {
+            $(this).removeClass('msg_textarea_heart')
+            $('#reply_submit_button').css({
+                'color': '#ffffff',
+                'border-color': '#ffffff'
+            })
+        } else {
+            $(this).addClass('msg_textarea_heart')
+            $('#reply_submit_button').css({
+                'color': '#8d9398',
+                'border-color': '#8d9398'
+            })
+        }
+
+        msg_textarea_length = $(this).val().length
+
+    })
+
+
+    // ** [등록하기] 클릭시
+    $('#reply_submit_button').on('click', function(){
+
+        if ($('#photo_view').css('display') == 'none') msg_area = 'guest'
+        else msg_area = 'photo'
+            
+        if ($('input[name=guest_user_name]').val().length > 0 && $('input[name=guest_user_mail]').val().length > 2) {
+
+            if ($('#msg_textarea').val().trim().length > 0) {
+                reply_send()
+            }
+
+        } else { 
+
+            mask(0.5)
+            $('#guest_user_form').css({
+                'display': 'block',
+                'left': wrapper_left_margin+'px',
+                'width': wrapper_width+'px'
+            })
+
+        }
+
+    })
+
+
+})
+
+function rawurlencode(str) {
+    str = (str + '').toString()
+    return encodeURIComponent(str)
+        .replace(/!/g, '%21')
+        .replace(/'/g, '%27')
+        .replace(/\(/g, '%28')
+        .replace(/\)/g, '%29')
+        .replace(/\*/g, '%2A')
+}
+
+
+function reply_send() {
+
+    // 댓글 위치 잡기
+    var parent_idx = null
+    var reply_loading_html = '<div id="reply_loading" class="reply_loading" style="text-align: center; background-color: #bbbbbb; height: 50px; line-height: 50px;"><img id="reply_loading_img" src="./img/loading4.gif" height="20" style="vertical-align: middle;" /></div>'
+
+    if (msg_area == 'photo') {
+        parent_idx = photo_idx
+        if (msg_root == 0) $('.reply_list[data-idx='+photo_idx+']').prepend(reply_loading_html)  //사진댓글 리스트 상단
+        else $('.msg[data-idx='+msg_root+']').after(reply_loading_html)  //원댓글 하단
+    }
+
+
+    if (msg_area == 'guest') {
+
+        parent_idx = 0
+
+        var msg_root_croot = $('.msg[data-idx='+msg_root+']').data('croot')
+
+        if (msg_root == 0) {
+
+            // 축하글 등록
+            $('#guest_article_list').children().children().children().prepend(reply_loading_html)  //축하글 리스트 상단
+
+        } else if (msg_root == msg_root_croot) {
+
+            // 댓글 등록
+            $('.msg[data-idx='+msg_root+']').after(reply_loading_html)  //축하글 텍스트 바로뒤
+        
+        } else {
+
+            // 대댓글 등록
+            $('.msg[data-idx='+msg_root+']').after(reply_loading_html)
+
+        }
+
+    }
+
+
+    //데이터 가공
+    var user_name = $('input[name=guest_user_name]').val().trim()
+    var user_mail = $('input[name=guest_user_mail]').val().trim()
+    var memo = encodeURIComponent($('#msg_textarea').val().trim())
+    var post_data = {
+        'uid': uid,
+        'area': msg_area,
+        'parent': parent_idx,
+        'croot': msg_root,
+        'croot_name': encodeURIComponent('@'+$('.msg_name[data-idx='+msg_root+']').text()),
+        'name': encodeURIComponent(user_name),
+        'mail': user_mail,
+        'memo': memo,
+        'notify': $('input[name=reply_notify]').val(),
+        'send_type': 'ajax'
+    }
+
+
+    //전송
+    var proc_url = '_msg_proc.php'
+    $.ajax({
+    
+        type: 'POST',
+        url: proc_url,
+        data: post_data,
+        //contentType: 'application/x-www-form-urlencoded;charset=euc-kr',
+        beforeSend: function(jqXHR) {
+            jqXHR.overrideMimeType('application/x-www-form-urlencoded;charset=euc-kr')
+        },
+        success: function(data) {
+
+            var scroll_to = 0
+            if (msg_area == 'photo' && msg_root == 0) scroll_to = $('.reply_list[data-idx='+photo_idx+']').offset().top-(window.innerHeight/3*2)
+            if (msg_area == 'photo' && msg_root  > 0) scroll_to = $('#reply_loading').offset().top-(window.innerHeight/3)
+            if (msg_area == 'guest' && msg_root == 0) scroll_to = $('#guest_article_list').offset().top-(window.innerHeight/3*2)
+            if (msg_area == 'guest' && msg_root  > 0) scroll_to = $('#reply_loading').offset().top-(window.innerHeight/3)
+            $('html, body').animate({ scrollTop: scroll_to }, 'fast')
+
+            $('#msg_textarea').val('')
+            $('#msg_textarea').prop('rows', 1)
+            $('#msg_textarea').attr('rows', 1)
+
+            setTimeout(function(){
+
+                $('#reply_loading_img').remove()
+                $('#reply_loading').animate({ backgroundColor: '#ffffff' }, 500, function(){
+
+                    msg_root = 0
+                    $('#reply_loading').replaceWith(data)
+
+                    if (msg_area == 'photo') photo_reply_update(photo_idx)
+                    $('.reply_loading').remove()
+
+                })
+
+            }, 500)
+
+        },
+        error: function(xhr, textStatus) {
+            console.log(xhr.responseText)
+        }
+    
+    })
+
+
+}
+
+
+
+// 샘플 아이디는 입력 비활성화
+var guest_add_enable = true
+if (uid.substr(0,6) == 'sample') {
+    guest_add_enable = false
+    document.getElementById('reply_add_wrapper_shadow').remove()
+}
+
+
+
+
+
+/*
+    스크롤 영역에 따른 입력란 노출, 숨김 처리
+                                                */
+
+var reply_add_row_visible = false
+
+$(window).bind('scroll', function(){
+    
+
+    if (guest_add_enable && $('#guest_section').length > 0 && $('#photo_view').css('display') == 'none') {
+
+        var show = true
+        
+        // 축하글 영역보다 윗부분인 경우
+        if (wsc_top < ($('#guest_section').offset().top - (window.innerHeight/10*9))) show = false
+        
+        // 축하글 텍스트 입력란에 포커스 되있는 경우
+        if ($('#msg_textarea').is(':focus')) show = true
+
+        // 축하글 텍스트 입력란에 입력내용 있는 경우
+        if ($('#msg_textarea').val().length > 0) show = true
+
+        if (show) {
+            
+            if (reply_add_row_visible == false) {
+                reply_add_row_visible = true
+                $('#reply_add_wrapper').stop().animate({ 'bottom': 0 }, 700)
+            }
+    
+        } else {
+    
+            $('#reply_add_wrapper').stop().css({ 'bottom': (0-parseInt($('#reply_add_wrapper').outerHeight()))+'px' })
+            //$('#tail_menu_section').hide()
+            reply_add_row_visible = false
+    
+        }
+
+
+    }
+
+
+})
+
+
+
+window.addEventListener('wheel', function(e) {
+    if (e.deltaY < 0) {
+        //console.log('scrolling up');
+    }
+    if (e.deltaY > 0) {
+        //console.log('scrolling down');
+        if (window.pageYOffset >= (document.documentElement.scrollHeight - window.innerHeight)) {
+            $('#tail_menu_section').show()
+        }
+    }
+})
+
+
+//최하단 도달했을시
+document.addEventListener('touchstart', handleTouchStart, false)
+document.addEventListener('touchmove', handleTouchMove, false)
+
+var touch_client_x = null
+var touch_client_y = null
+
+function handleTouchStart(evt) {
+    touch_client_x = evt.touches[0].clientX
+    touch_client_y = evt.touches[0].clientY
+}
+
+function handleTouchMove(evt) {
+
+    if ( ! touch_client_x || ! touch_client_y ) {
+        return
+    }
+
+    var touch_client_up_x = evt.touches[0].clientX
+    var touch_client_up_y = evt.touches[0].clientY
+
+    var touch_diff_x = touch_client_x - touch_client_up_x
+    var touch_diff_y = touch_client_y - touch_client_up_y
+
+    if ( Math.abs( touch_diff_x ) > Math.abs( touch_diff_y ) ) {
+
+        if ( touch_diff_x > 0 ) {
+            /* swipe left */
+        } else {
+            /* swipe right */
+        }
+
+    } else {
+
+        if ( touch_diff_y > 0 ) {
+            /* swipe up */
+            if (window.pageYOffset >= (document.documentElement.scrollHeight - window.innerHeight)) {
+                $('#tail_menu_section').show()
+            }
+
+        } else { 
+            /* swipe down */
+        }
+
+    }
+
+    touch_client_x = null
+    touch_client_y = null
+
+}
+</script><style>
+#msg_delete_button {
+    background-color: #dddddd;
+    border-color: #dddddd;
+}
+#reply_mail_notify_row, #reply_form_edit_writer_notice {
+    position: relative;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#reply_mail_notify_button {
+    position: absolute; right: 0; top: -2px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+#reply_form {
+    padding: 20px;
+}
+</style>
+<div class="mask_over form_layer" id="reply_form">
+
+    <img class="form_close_button" id="reply_form_close_button" src="./img/button_x_01_black.png" height="17" />
+    <div class="form_title" id="msg_form_title">댓글 수정</div>
+
+    <div><textarea class="textarea_single_row" id="reply_form_textarea" placeholder="내용을 입력하세요"></textarea></div>
+
+    <div id="reply_mail_notify_row">
+        댓글 등록시 이메일 알림 받기
+        <img id="reply_mail_notify_button" src="./img/toggle_button_on.png" />
+        <input type="hidden" name="reply_notify" value="1" />
+    </div>
+
+    <div id="reply_form_edit_writer_notice">
+        메시지 수정은 작성자만 가능합니다.
+    </div>
+
+    <div style="padding-top: 5px; padding-bottom: 10px;">
+        <table cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+                <td style="width: auto;"><div class="register_button" id="msg_form_submit_button">등록하기</div></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 90px;"><div class="register_button" id="msg_delete_button">삭제</div></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+
+
+<script>
+$(function(){
+    
+    
+    $('#reply_mail_notify_button').on('click', function(){
+
+        if ($(this).attr('src').indexOf('on.png') != -1) {
+            reply_form_notify(0)
+        } else {
+            reply_form_notify(1)
+        }
+
+    })
+
+
+})
+
+
+function reply_form_notify(sw) {
+
+    if (sw == 0) {
+        $('input[name=reply_notify]').val(0)
+        $('#reply_mail_notify_button').attr('src', $('#reply_mail_notify_button').attr('src').replace('on.png', 'off.png'))
+    }
+
+    if (sw == 1) {
+        $('input[name=reply_notify]').val(1)
+        $('#reply_mail_notify_button').attr('src', $('#reply_mail_notify_button').attr('src').replace('off.png', 'on.png'))
+    }
+
+}
+
+</script>
+<style>
+#console {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    position: fixed; z-index: 20;
+
+    background-color: #efefef;
+    bottom: 0;
+    color: black;
+    font-size: 12px;
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+    opacity: 0.75;
+
+    display: none;
+
+}
+</style>
+<div id="console">console</div>
+
+</body>
+</html>
+
+
+
+
+<script>
+$(function() {
+
+
+    // 하단 흰 여백을 남는 해상도 만큼 채우기
+        var bottom_space = (document.documentElement.clientHeight) - Number(document.body.clientHeight)  //window.innerHeight
+    if (bottom_space > 50) bottom_space=10;
+    $('#banner_bottom_space').css('height', 45+bottom_space+'px')
+    
+
+
+    /* FOR DEVEL, TEST */
+
+
+    // COOKIE DELETE FUNCTION FOR TEST
+    $('.cookie_clear_btn').on('click', function(e) {
+        e.stopPropagation()
+        if (confirm('저장된 쿠키를 삭제할까요?\n아래 내역들이 삭제됩니다.\n\n- 설정 아이콘 노출여부\n- 축하글 작성용 이름+메일 입력내역')) {
+            $.cookie('setting_click_check', null)
+            $.cookie('mcard_guest_user_name', null, { 'path': '/' })
+            $.cookie('mcard_guest_user_mail', null, { 'path': '/' })
+            setTimeout(function(){
+                console.log('setting_click_check', $.cookie('setting_click_check'))
+                console.log('mcard_guest_user_name', $.cookie('mcard_guest_user_name'))
+                console.log('mcard_guest_user_name', $.cookie('mcard_guest_user_name'))
+            }, 500)
+            location.reload()
+        }
+    })
+
+
+    /*
+
+    $('#console').text(
+            'wsc_top:'+wsc_top
+            +' dh:'+document.body.scrollHeight
+            +' w-innerH:'+window.innerHeight
+            +' v:'+document.getElementById('tail_menu_section').scrollHeight
+    )
+
+    setTimeout(function(){
+            mask(0.5)
+            $('#reply_form').css({
+                'display': 'block',
+                'left': wrapper_left_margin+'px',
+                'width': wrapper_width+'px'
+            })
+    },500)
+
+    */
+
+})
+
+
+function ask_admin_login(s_url) {
+    if (confirm('로그인이 필요한 서비스입니다.\n\n로그인 페이지로 이동할까요?')) {
+        location.href='user_login.php?ecard=eksql11223&s_url='+s_url
+    }
+}
+
+
+function not_for_pc() {
+                return true
+    }
+
+
+function windowcopen(url, title, options) {
+
+    var option_nosize = "";
+    options_arr = options.split(",")
+    for(i=0; (i+1) <= options_arr.length; i++){
+        option = options_arr[i]
+        option_arr = option.split("=")
+        var fld = option_arr[0]
+        var val = option_arr[1]
+        if(fld == 'width') var ww = val
+        else if(fld == 'height') var wh = val
+        else option_nosize += ","+fld+"="+val
+    }
+
+    var left = (screen.width/2)-(ww/2)
+    var top = (screen.height/2)-(wh/2)-50
+    return window.open(url, title, 'width='+ww+', height='+wh+', top='+top+', left='+left +option_nosize)
+
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- counters block -->
+
+
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s) {if (f.fbq)return;n=f.fbq=function() {n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if (!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '442009885997301', {
+em: 'insert_email_variable,'
+});
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=442009885997301&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+
+
+
+
+<!-- Google 애널리틱스 2017.03.14 -->
+<script>
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-58635370-1', 'auto');
+ga('require','displayfeatures');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview');
+</script>
+<!-- Google 애널리틱스 -->
+
+
+<!-- Google 리마케팅 태그 코드 2017.03.09 -->
+<!--------------------------------------------------
+리마케팅 태그를 개인식별정보와 연결하거나 민감한 카테고리와 관련된 페이지에 추가해서는 안 됩니다. 리마케팅 태그를 설정하는 방법에 대해 자세히 알아보려면 다음 페이지를 참조하세요. http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1006263967;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1006263967/?value=0&amp;guid=ON&amp;script=0"./>
+</div>
+</noscript>
+<!-- Google 리마케팅 태그 코드 -->
+
+
+
+<!-- counters end -->
+
+
+<style>
+.register_button {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #666666;
+    color: #333333;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 12px;
+    text-align: center;
+}
+</style>
+
+
+
+
+<script>
+
+// 블록들 저장 되어있는 순서로 재배치
+var section_sid = 'insa,calendar,photo,map,phone,bank,notice';
+
+
+
+
+function section_sid_restore() {
+
+    if (!section_sid || section_sid == '') {
+        return false
+    }
+
+    var tmp = section_sid.split(',')
+    for(i=0; i < tmp.length; i++) {
+        var section_block_name = tmp[i]
+        if (section_block_name) {  // 공란은 처리 안함
+            var section_block_obj = $('div[data-section='+section_block_name+']')
+            $('#sortable_start_line').before(section_block_obj)
+        }
+    }
+
+}
+
+$(function() {
+    if (section_sid) {
+        section_sid_restore()  // section 변경 된 순서로 로드
+    }
+})
+
+</script>
+
+
+
+<script type="text/javascript">
+if (!Kakao.init) {
+    Kakao.init('13da3914377346b0b8f74f5309b49dad')
+}
+
+function kakao_navi() {
+
+    if (is_pc == '1') {
+        alert('모바일 기기 전용 기능입니다')
+    }
+
+    
+}
+
+</script>
